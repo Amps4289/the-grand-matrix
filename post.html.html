@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>บทความ | The Grand Matrix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="nav-left">
+        <a href="index.html" class="brand-logo">The Grand Matrix</a>
+        <ul class="nav-links" id="mainMenu">
+          <li><a href="index.html">All articles</a></li>
+          <li><a href="index.html?cat=People">People</a></li>
+          <li><a href="index.html?cat=Lifestyle">Lifestyle</a></li>
+          <li><a href="index.html?cat=Technology">Technology</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="about.html" class="about-link">About</a>
+        <a href="#newsletter" class="btn-subscribe">Subscribe</a>
+      </div>
+      <button class="mobile-toggle" onclick="document.getElementById('mainMenu').classList.toggle('active')">&#9776;</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <main class="single-post-wrap" id="postContainer">
+      <!-- เนื้อหาบทความจะถูกดึงมาแสดงที่นี่ -->
+    </main>
+
+    <section class="newsletter-box" id="newsletter">
+      <h2>Get the best analysis sent to your inbox, every month</h2>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('ขอบคุณที่ติดตาม The Grand Matrix ครับ'); this.reset();">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="newsletter-note">Once monthly, no spam</div>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2026 The Grand Matrix. All rights reserved.</span>
+        <a href="index.html" style="color: var(--accent-gold);">&larr; กลับหน้าหลัก</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="posts-data.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const postId = params.get('id');
+    const post = BLOG_POSTS.find(p => p.id === postId) || BLOG_POSTS[0];
+
+    document.title = `${post.title} | The Grand Matrix`;
+
+    const videoHTML = post.youtubeId
+      ? `<div class="video-container">
+           <iframe src="https://www.youtube.com/embed/${post.youtubeId}" title="YouTube video player" allowfullscreen></iframe>
+         </div>`
+      : '';
+
+    const keywordsHTML = (post.keywords || [])
+      .map(kw => `<span class="keyword-tag"># ${kw}</span>`)
+      .join('');
+
+    document.getElementById('postContainer').innerHTML = `
+      <a href="index.html" class="back-link">&larr; All articles</a>
+      <div class="meta-bar">
+        <span>${post.category}</span>
+        <span class="meta-date">${post.date}</span>
+      </div>
+      <h1 class="single-post-title">${post.title}</h1>
+      <img src="${post.image}" alt="${post.title}" class="single-hero-img" />
+      <div class="single-post-body">
+        ${post.content}
+        ${videoHTML}
+      </div>
+      <div class="keywords-box">
+        <span style="font-size: 0.85rem; color: var(--text-secondary); margin-right: 6px;">Keywords:</span>
+        ${keywordsHTML}
+      </div>
+    `;
+  </script>
+</body>
+</html>
