@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Grand Matrix | Systems Thinking, People, Lifestyle & Technology</title>
-  <meta name="description" content="ถอดรหัสโครงข่ายเบื้องหลังโลก ประวัติศาสตร์ เศรษฐกิจ และโครงสร้างอำนาจ ผ่านมุมมอง Systems Thinking" />
+  <title>The Grand Matrix | Technology, People, Lifestyle, Philosophy & Photo</title>
+  <meta name="description" content="Welcome to The Grand Matrix, we write about technology, people, lifestyle, philosophy and photo" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,14 +15,15 @@
       <div class="nav-left">
         <a href="index.html" class="brand-logo">The Grand Matrix</a>
         <ul class="nav-links" id="mainMenu">
-          <li><a data-category="ALL" class="active" onclick="filterCategory('ALL', this)">All articles</a></li>
-          <li><a data-category="People" onclick="filterCategory('People', this)">People</a></li>
-          <li><a data-category="Lifestyle" onclick="filterCategory('Lifestyle', this)">Lifestyle</a></li>
-          <li><a data-category="Technology" onclick="filterCategory('Technology', this)">Technology</a></li>
+          <li><a href="index.html" data-category="ALL" class="active" onclick="filterCategory('ALL', this, event)">All articles</a></li>
+          <li><a href="index.html?cat=People" data-category="People" onclick="filterCategory('People', this, event)">People</a></li>
+          <li><a href="index.html?cat=Lifestyle" data-category="Lifestyle" onclick="filterCategory('Lifestyle', this, event)">Lifestyle</a></li>
+          <li><a href="index.html?cat=Technology" data-category="Technology" onclick="filterCategory('Technology', this, event)">Technology</a></li>
+          <li><a href="index.html?cat=Philosophy" data-category="Philosophy" onclick="filterCategory('Philosophy', this, event)">Philosophy</a></li>
+          <li><a href="index.html?cat=Photo" data-category="Photo" onclick="filterCategory('Photo', this, event)">Photo</a></li>
         </ul>
       </div>
       <div class="nav-right">
-        <a href="about.html" class="about-link">About</a>
         <a href="#newsletter" class="btn-subscribe">Subscribe</a>
       </div>
       <button class="mobile-toggle" onclick="document.getElementById('mainMenu').classList.toggle('active')">&#9776;</button>
@@ -32,8 +33,7 @@
   <div class="container">
     <!-- HERO SECTION -->
     <section class="hero-section">
-      <h1 class="hero-title">Welcome to <span>The Grand Matrix</span>, we write about technology, people and lifestyle</h1>
-      <p class="hero-subtitle">ถอดรหัสโครงสร้างระบบ เศรษฐกิจ ประวัติศาสตร์ และเทคโนโลยี ผ่านมุมมองการคิดเชิงระบบ (Systems Thinking)</p>
+      <h1 class="hero-title">Welcome to The Grand Matrix, we write about technology, people and philosophy</h1>
     </section>
 
     <!-- EDITORIAL ASYMMETRIC GRID -->
@@ -53,7 +53,7 @@
 
     <!-- NEWSLETTER -->
     <section class="newsletter-box" id="newsletter">
-      <h2>Get the best analysis sent to your inbox, every month</h2>
+      <h2>Get the best sent to your inbox, every month</h2>
       <form class="newsletter-form" onsubmit="event.preventDefault(); alert('ขอบคุณที่ติดตาม The Grand Matrix ครับ'); this.reset();">
         <input type="email" placeholder="Enter your email" required />
         <button type="submit">Subscribe</button>
@@ -62,44 +62,41 @@
     </section>
   </div>
 
-  <!-- FOOTER -->
+  <!-- FOOTER (3 คอลัมน์: 1. Pages, 2. Categories, 3. Contact) -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
           <a href="index.html" class="brand-logo">The Grand Matrix</a>
-          <p style="margin-top: 14px; font-size: 0.9rem;">พื้นที่บันทึกการสังเกตการณ์โครงสร้างโลก เทคโนโลยี และวิถีคิดอย่างเป็นระบบ</p>
         </div>
         <div class="footer-col">
           <h4>Pages</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
             <li><a href="#newsletter">Subscribe</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Categories</h4>
           <ul>
-            <li><a href="index.html">All articles</a></li>
+            <li><a href="index.html">All</a></li>
             <li><a href="index.html?cat=People">People</a></li>
             <li><a href="index.html?cat=Lifestyle">Lifestyle</a></li>
             <li><a href="index.html?cat=Technology">Technology</a></li>
+            <li><a href="index.html?cat=Philosophy">Philosophy</a></li>
+            <li><a href="index.html?cat=Photo">Photo</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Core Topics</h4>
+          <h4>Contact</h4>
           <ul>
-            <li><a href="index.html?cat=Technology">Systems Thinking</a></li>
-            <li><a href="index.html?cat=Technology">Infrastructure &amp; AI</a></li>
-            <li><a href="index.html?cat=People">Mental Models</a></li>
-            <li><a href="index.html?cat=Lifestyle">Digital Balance</a></li>
+            <li><a href="mailto:amps4289@gmail.com">amps4289@gmail.com</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2026 The Grand Matrix. All rights reserved.</span>
-        <span>Built on Modern Web Architecture</span>
+        <span>&copy; 2026 The Grand Matrix</span>
+        <span>Systems Thinking &amp; Editorial</span>
       </div>
     </div>
   </footer>
@@ -160,10 +157,9 @@
           `;
         });
       } else {
-        // แสดงผลเฉพาะหมวดหมู่ที่เลือก
         featuredColumn.style.display = 'none';
         editorialLayout.style.gridTemplateColumns = '1fr';
-        recentLabel.textContent = `Category: ${category}`;
+        recentLabel.textContent = category;
 
         const filtered = BLOG_POSTS.filter(p => p.category.toLowerCase() === category.toLowerCase());
         filtered.forEach(post => {
@@ -186,14 +182,14 @@
       }
     }
 
-    function filterCategory(category, element) {
+    function filterCategory(category, element, event) {
+      if (event) event.preventDefault();
       document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
       if (element) element.classList.add('active');
       document.getElementById('mainMenu').classList.remove('active');
       renderPosts(category);
     }
 
-    // ตรวจสอบ Query Parameter ?cat=... ตอนเปิดหน้า
     const params = new URLSearchParams(window.location.search);
     const initialCat = params.get('cat') || 'ALL';
     const activeNav = document.querySelector(`.nav-links a[data-category="${initialCat}"]`);

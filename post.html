@@ -17,13 +17,11 @@
           <li><a href="index.html?cat=People">People</a></li>
           <li><a href="index.html?cat=Lifestyle">Lifestyle</a></li>
           <li><a href="index.html?cat=Technology">Technology</a></li>
-          <li><a href="index.html?cat=Philosophy">Philosophy</a></li> 
+          <li><a href="index.html?cat=Philosophy">Philosophy</a></li>
           <li><a href="index.html?cat=Photo">Photo</a></li>
-        
         </ul>
       </div>
       <div class="nav-right">
-        <a href="about.html" class="about-link">About</a>
         <a href="#newsletter" class="btn-subscribe">Subscribe</a>
       </div>
       <button class="mobile-toggle" onclick="document.getElementById('mainMenu').classList.toggle('active')">&#9776;</button>
@@ -31,12 +29,10 @@
   </header>
 
   <div class="container">
-    <main class="single-post-wrap" id="postContainer">
-      <!-- เนื้อหาบทความจะถูกดึงมาแสดงที่นี่ -->
-    </main>
+    <main class="single-post-wrap" id="postContainer"></main>
 
     <section class="newsletter-box" id="newsletter">
-      <h2>Get the best analysis sent to your inbox, every month</h2>
+      <h2>Get the best sent to your inbox, every month</h2>
       <form class="newsletter-form" onsubmit="event.preventDefault(); alert('ขอบคุณที่ติดตาม The Grand Matrix ครับ'); this.reset();">
         <input type="email" placeholder="Enter your email" required />
         <button type="submit">Subscribe</button>
@@ -45,11 +41,41 @@
     </section>
   </div>
 
+  <!-- FOOTER (3 คอลัมน์: 1. Pages, 2. Categories, 3. Contact) -->
   <footer class="site-footer">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo">The Grand Matrix</a>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#newsletter">Subscribe</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="index.html">All</a></li>
+            <li><a href="index.html?cat=People">People</a></li>
+            <li><a href="index.html?cat=Lifestyle">Lifestyle</a></li>
+            <li><a href="index.html?cat=Technology">Technology</a></li>
+            <li><a href="index.html?cat=Philosophy">Philosophy</a></li>
+            <li><a href="index.html?cat=Photo">Photo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:amps4289@gmail.com">amps4289@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="footer-bottom">
-        <span>&copy; 2026 The Grand Matrix. All rights reserved.</span>
-        <a href="index.html" style="color: var(--accent-gold);">&larr; กลับหน้าหลัก</a>
+        <span>&copy; 2026 The Grand Matrix</span>
+        <span>Systems Thinking &amp; Editorial</span>
       </div>
     </div>
   </footer>
