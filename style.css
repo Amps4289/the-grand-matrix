@@ -3,11 +3,11 @@
 :root {
   --bg-main: #0b0f19;
   --bg-card: #111827;
-  --bg-newsletter: #0f291e;
+  --bg-newsletter: #0d2b1a;
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --accent-gold: #d4af37;
-  --accent-mint: #a7f3d0;
+  --accent-mint: #b7e4c7;
   --border-subtle: #1e293b;
   --font-serif: 'Newsreader', 'Sarabun', Georgia, serif;
   --font-sans: 'Inter', 'Sarabun', -apple-system, sans-serif;
@@ -46,7 +46,7 @@ img {
   padding: 0 28px;
 }
 
-/* --- 1. NAVBAR (โครงสร้าง Scribe + โทน Dark Gold) --- */
+/* --- 1. NAVBAR --- */
 .navbar {
   border-bottom: 1px solid var(--border-subtle);
   padding: 20px 0;
@@ -133,7 +133,7 @@ img {
   cursor: pointer;
 }
 
-/* --- 2. HERO WELCOME SECTION (เส้นคั่นเต็มความกว้างแบบ Scribe) --- */
+/* --- 2. HERO WELCOME SECTION --- */
 .hero-section {
   padding: 68px 0 56px 0;
   border-bottom: 1px solid var(--border-subtle);
@@ -150,7 +150,7 @@ img {
   letter-spacing: -0.02em;
 }
 
-/* --- 3. ASYMMETRIC EDITORIAL GRID (ซ้าย Featured 1 Col : ขวา Recent 2 Cols) --- */
+/* --- 3. ASYMMETRIC EDITORIAL GRID --- */
 .editorial-layout {
   display: grid;
   grid-template-columns: 1.05fr 1fr;
@@ -166,7 +166,6 @@ img {
   font-weight: 500;
 }
 
-/* Left Column: Featured */
 .featured-list {
   display: flex;
   flex-direction: column;
@@ -174,4 +173,227 @@ img {
 }
 
 .featured-card img {
-  width
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 1px solid var(--border-subtle);
+}
+
+.meta-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--accent-gold);
+  padding-top: 10px;
+  margin-bottom: 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-gold);
+  font-weight: 500;
+}
+
+.meta-date {
+  color: var(--text-secondary);
+}
+
+.featured-title {
+  font-family: var(--font-serif);
+  font-size: 2.35rem;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
+}
+
+.featured-title a:hover {
+  color: var(--accent-gold);
+}
+
+.featured-excerpt {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.68;
+}
+
+.recent-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 26px;
+}
+
+.recent-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin-bottom: 14px;
+  border: 1px solid var(--border-subtle);
+}
+
+.recent-title {
+  font-family: var(--font-serif);
+  font-size: 1.42rem;
+  line-height: 1.28;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.recent-title a:hover {
+  color: var(--accent-gold);
+}
+
+.recent-excerpt {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+/* --- 4. SINGLE POST VIEW --- */
+.single-post-wrap {
+  max-width: 780px;
+  margin: 48px auto 84px auto;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--accent-gold);
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.single-post-title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+.single-hero-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin-bottom: 36px;
+  border: 1px solid var(--border-subtle);
+}
+
+.single-post-body {
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: #cbd5e1;
+}
+
+.single-post-body h2,
+.single-post-body h3 {
+  font-family: var(--font-serif);
+  color: var(--accent-gold);
+  font-weight: 500;
+  margin: 36px 0 14px 0;
+}
+
+.single-post-body p {
+  margin-bottom: 22px;
+}
+
+.single-post-body blockquote {
+  border-left: 2px solid var(--accent-gold);
+  padding-left: 20px;
+  margin: 28px 0;
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid var(--border-subtle);
+  margin: 32px 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.keywords-box {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.keyword-tag {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+/* --- 5. NEWSLETTER BANNER (กล่องแนวนอนตามภาพตัวอย่าง) --- */
+.newsletter-box {
+  background-color: var(--bg-newsletter);
+  border: 1px solid #1e3a2f;
+  color: #ffffff;
+  padding: 72px 24px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.newsletter-box h2 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 400;
+  max-width: 520px;
+  margin: 0 auto 28px auto;
+  line-height: 1.2;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 520px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 4px;
+  border: 1px solid #334155;
+  background: #ffffff;
+  color: #0b0f19;
+  font-size: 0.95rem;
+}
+
+.newsletter-form button {
+  padding: 14px 24px;
+  border-radius: 4px;
+  border: none;
+  background: var(--accent-mint);
+  color: #0d2b1a;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  white-space: nowrap;
