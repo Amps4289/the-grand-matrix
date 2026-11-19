@@ -397,3 +397,70 @@ img {
   font-size: 0.95rem;
   cursor: pointer;
   white-space: nowrap;
+
+/* --- บังคับจัด Footer เป็น 4 ส่วนแนวนอน (โลโก้ซ้าย + 3 คอลัมน์: Pages, Categories, Contact) --- */
+.site-footer {
+  border-top: 1px solid #1e293b;
+  padding: 56px 0 48px 0;
+  color: #94a3b8;
+  width: 100%;
+}
+
+.footer-grid {
+  display: grid !important;
+  grid-template-columns: 1.6fr 1fr 1fr 1.3fr !important;
+  gap: 40px !important;
+  margin-bottom: 48px !important;
+  align-items: start !important;
+}
+
+.footer-col h4 {
+  color: #f8fafc !important;
+  font-size: 0.95rem !important;
+  margin-bottom: 16px !important;
+  font-weight: 600 !important;
+}
+
+.footer-col ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.footer-col li {
+  margin-bottom: 10px !important;
+  font-size: 0.9rem !important;
+  list-style-type: none !important;
+}
+
+.footer-col a {
+  color: #94a3b8 !important;
+  text-decoration: none !important;
+}
+
+.footer-col a:hover {
+  color: #d4af37 !important;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* บนมือถือหรือจอแคบ ให้เรียงเป็น 2 คอลัมน์ หรือ 1 คอลัมน์อัตโนมัติ */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 28px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
