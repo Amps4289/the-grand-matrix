@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Grand Matrix | Systems Thinking, People, Lifestyle & Technology</title>
+  <meta name="description" content="ถอดรหัสโครงข่ายเบื้องหลังโลก ประวัติศาสตร์ เศรษฐกิจ และโครงสร้างอำนาจ ผ่านมุมมอง Systems Thinking" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="nav-left">
+        <a href="index.html" class="brand-logo">The Grand Matrix</a>
+        <ul class="nav-links" id="mainMenu">
+          <li><a data-category="ALL" class="active" onclick="filterCategory('ALL', this)">All articles</a></li>
+          <li><a data-category="People" onclick="filterCategory('People', this)">People</a></li>
+          <li><a data-category="Lifestyle" onclick="filterCategory('Lifestyle', this)">Lifestyle</a></li>
+          <li><a data-category="Technology" onclick="filterCategory('Technology', this)">Technology</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="about.html" class="about-link">About</a>
+        <a href="#newsletter" class="btn-subscribe">Subscribe</a>
+      </div>
+      <button class="mobile-toggle" onclick="document.getElementById('mainMenu').classList.toggle('active')">&#9776;</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <h1 class="hero-title">Welcome to <span>The Grand Matrix</span>, we write about technology, people and lifestyle</h1>
+      <p class="hero-subtitle">ถอดรหัสโครงสร้างระบบ เศรษฐกิจ ประวัติศาสตร์ และเทคโนโลยี ผ่านมุมมองการคิดเชิงระบบ (Systems Thinking)</p>
+    </section>
+
+    <!-- EDITORIAL ASYMMETRIC GRID -->
+    <main class="editorial-layout" id="editorialLayout">
+      <!-- Left Column: Featured -->
+      <section class="featured-column" id="featuredColumn">
+        <div class="section-label">Featured</div>
+        <div class="featured-list" id="featuredList"></div>
+      </section>
+
+      <!-- Right Column: Recent -->
+      <section class="recent-column">
+        <div class="section-label" id="recentLabel">Recent</div>
+        <div class="recent-grid" id="recentGrid"></div>
+      </section>
+    </main>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-box" id="newsletter">
+      <h2>Get the best analysis sent to your inbox, every month</h2>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('ขอบคุณที่ติดตาม The Grand Matrix ครับ'); this.reset();">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="newsletter-note">Once monthly, no spam</div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo">The Grand Matrix</a>
+          <p style="margin-top: 14px; font-size: 0.9rem;">พื้นที่บันทึกการสังเกตการณ์โครงสร้างโลก เทคโนโลยี และวิถีคิดอย่างเป็นระบบ</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#newsletter">Subscribe</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="index.html">All articles</a></li>
+            <li><a href="index.html?cat=People">People</a></li>
+            <li><a href="index.html?cat=Lifestyle">Lifestyle</a></li>
+            <li><a href="index.html?cat=Technology">Technology</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Core Topics</h4>
+          <ul>
+            <li><a href="index.html?cat=Technology">Systems Thinking</a></li>
+            <li><a href="index.html?cat=Technology">Infrastructure &amp; AI</a></li>
+            <li><a href="index.html?cat=People">Mental Models</a></li>
+            <li><a href="index.html?cat=Lifestyle">Digital Balance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 The Grand Matrix. All rights reserved.</span>
+        <span>Built on Modern Web Architecture</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="posts-data.js"></script>
+  <script>
+    function renderPosts(category = 'ALL') {
+      const featuredList = document.getElementById('featuredList');
+      const recentGrid = document.getElementById('recentGrid');
+      const featuredColumn = document.getElementById('featuredColumn');
+      const editorialLayout = document.getElementById('editorialLayout');
+      const recentLabel = document.getElementById('recentLabel');
+
+      featuredList.innerHTML = '';
+      recentGrid.innerHTML = '';
+
+      if (category === 'ALL') {
+        featuredColumn.style.display = 'block';
+        editorialLayout.style.gridTemplateColumns = '';
+        recentLabel.textContent = 'Recent';
+
+        const featuredPosts = BLOG_POSTS.filter(p => p.featured);
+        const recentPosts = BLOG_POSTS.filter(p => !p.featured);
+
+        featuredPosts.forEach(post => {
+          featuredList.innerHTML += `
+            <article class="featured-card">
+              <a href="post.html?id=${post.id}">
+                <img src="${post.image}" alt="${post.title}" loading="lazy" />
+              </a>
+              <div class="meta-bar">
+                <span>${post.category}</span>
+                <span class="meta-date">${post.date}</span>
+              </div>
+              <h2 class="featured-title">
+                <a href="post.html?id=${post.id}">${post.title}</a>
+              </h2>
+              <p class="featured-excerpt">${post.excerpt}</p>
+            </article>
+          `;
+        });
+
+        recentPosts.forEach(post => {
+          recentGrid.innerHTML += `
+            <article class="recent-card">
+              <a href="post.html?id=${post.id}">
+                <img src="${post.image}" alt="${post.title}" loading="lazy" />
+              </a>
+              <div class="meta-bar">
+                <span>${post.category}</span>
+                <span class="meta-date">${post.date}</span>
+              </div>
+              <h3 class="recent-title">
+                <a href="post.html?id=${post.id}">${post.title}</a>
+              </h3>
+              <p class="recent-excerpt">${post.excerpt}</p>
+            </article>
+          `;
+        });
+      } else {
+        // แสดงผลเฉพาะหมวดหมู่ที่เลือก
+        featuredColumn.style.display = 'none';
+        editorialLayout.style.gridTemplateColumns = '1fr';
+        recentLabel.textContent = `Category: ${category}`;
+
+        const filtered = BLOG_POSTS.filter(p => p.category.toLowerCase() === category.toLowerCase());
+        filtered.forEach(post => {
+          recentGrid.innerHTML += `
+            <article class="recent-card">
+              <a href="post.html?id=${post.id}">
+                <img src="${post.image}" alt="${post.title}" loading="lazy" />
+              </a>
+              <div class="meta-bar">
+                <span>${post.category}</span>
+                <span class="meta-date">${post.date}</span>
+              </div>
+              <h3 class="recent-title">
+                <a href="post.html?id=${post.id}">${post.title}</a>
+              </h3>
+              <p class="recent-excerpt">${post.excerpt}</p>
+            </article>
+          `;
+        });
+      }
+    }
+
+    function filterCategory(category, element) {
+      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+      if (element) element.classList.add('active');
+      document.getElementById('mainMenu').classList.remove('active');
+      renderPosts(category);
+    }
+
+    // ตรวจสอบ Query Parameter ?cat=... ตอนเปิดหน้า
+    const params = new URLSearchParams(window.location.search);
+    const initialCat = params.get('cat') || 'ALL';
+    const activeNav = document.querySelector(`.nav-links a[data-category="${initialCat}"]`);
+    filterCategory(initialCat, activeNav);
+  </script>
+</body>
+</html>
