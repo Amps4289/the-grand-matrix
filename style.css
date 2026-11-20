@@ -142,7 +142,7 @@ img {
 
 .hero-title {
   font-family: var(--font-serif);
-  font-size: 2.9rem;
+  font-size: 2.0rem;
   font-weight: 400;
   line-height: 1.18;
   max-width: 780px;
@@ -567,7 +567,7 @@ main > section:first-child h1 {
 .featured-card h3,
 [class*="featured"] h2,
 [class*="featured"] h3 {
-  font-size: clamp(1.1rem, 1.65vw, 1.15rem) !important;
+  font-size: clamp(1.1rem, 1.65vw, 1.32rem) !important;
   line-height: 1.35 !important;
 }
 
