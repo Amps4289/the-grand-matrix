@@ -1,4 +1,66 @@
-const BLOG_POSTS = [  {
+const BLOG_POSTS = [ {
+    id: "bill-gates-software-platform-and-global-systems",
+    title: "บิล เกตส์ (Bill Gates): จากสถาปนิกซอฟต์แวร์ยุคคอมพิวเตอร์ส่วนบุคคลสู่ผู้ขับเคลื่อนระบบโลก",
+    category: "People",
+    date: "NOV 20, 2026",
+    featured: false,
+    image: "bill-gates.jpg",
+    excerpt: "สำรวจเส้นทางชีวิต แนวคิด และผลงานของบิล เกตส์ ผู้วางมาตรฐานซอฟต์แวร์คอมพิวเตอร์ส่วนบุคคลร่วมกับ Microsoft และขยายบทบาทสู่การแก้ปัญหาระบบสาธารณสุข พลังงาน และโลกยุคใหม่",
+    youtubeId: "pyg-DYm7b0A",
+    keywords: ["Bill Gates", "Microsoft", "Windows", "MS-DOS", "Software Platform", "Systems Thinking"],
+    content: `
+      <p>หากมองผ่านเลนส์ของการคิดเชิงระบบ (<strong>Systems Thinking</strong>) <strong>บิล เกตส์ (Bill Gates)</strong> คือบุคคลสำคัญที่เปลี่ยนจุดศูนย์กลางมูลค่าของอุตสาหกรรมคอมพิวเตอร์ จากการผูกติดอยู่กับฮาร์ดแวร์เฉพาะเครื่อง มาสู่ "มาตรฐานซอฟต์แวร์และแพลตฟอร์มร่วม (Software Platform)" ที่ช่วยให้ระบบนิเวศของคอมพิวเตอร์ส่วนบุคคลขยายตัวไปทั่วโลก</p>
+
+      <h2>1. ประวัติและเส้นทางชีวิต</h2>
+      <ul>
+        <li><strong>วัยเยาว์และการเริ่มต้นเขียนโค้ด (ค.ศ. 1955–1974):</strong> วิลเลียม เฮนรี เกตส์ ที่ 3 เกิดเมื่อวันที่ 28 ตุลาคม ค.ศ. 1955 ที่เมืองซีแอตเทิล รัฐวอชิงตัน เติบโตในครอบครัวที่ส่งเสริมการเรียนรู้และบทสนทนาเชิงวิเคราะห์ เขาได้สัมผัสคอมพิวเตอร์ตั้งแต่สมัยเรียนที่โรงเรียน Lakeside และร่วมเขียนโปรแกรมกับ <strong>พอล อัลเลน (Paul Allen)</strong> ก่อนเข้าศึกษาต่อที่ <strong>Harvard University</strong> ในปี ค.ศ. 1973</li>
+        <li><strong>การก่อตั้ง Microsoft และการก้าวขึ้นเป็นผู้นำซอฟต์แวร์ (ค.ศ. 1975–2000):</strong> ในปี ค.ศ. 1975 เกตส์และพอล อัลเลน พัฒนา Altair BASIC และก่อตั้ง <strong>Microsoft</strong> เพื่อผลักดันแนวคิดการทำให้ซอฟต์แวร์เป็นสินค้าเชิงพาณิชย์ที่มีมาตรฐานร่วมกัน ความร่วมมือกับ IBM ในยุค IBM PC และความสำเร็จของ <strong>MS-DOS</strong> รวมถึงระบบปฏิบัติการ <strong>Windows</strong> ผลักดันให้ Microsoft กลายเป็นแกนหลักของการทำงานในสำนักงานและบ้านเรือนทั่วโลก โดยเกตส์ดำรงตำแหน่ง CEO จนถึงปี ค.ศ. 2000</li>
+        <li><strong>การเปลี่ยนผ่านสู่การทำงานด้านระบบโลกและกิจการเพื่อสังคม (ค.ศ. 2000–ปัจจุบัน):</strong> หลังจากส่งมอบตำแหน่ง CEO ของ Microsoft ให้ <strong>สตีฟ บอลเมอร์ (Steve Ballmer)</strong> เกตส์ค่อยๆ ลดบทบาทบริหารประจำวันในบริษัท และทุ่มเททรัพยากรและเวลาให้กับการแก้ปัญหาระบบขนาดใหญ่ผ่าน <strong>Gates Foundation</strong> รวมถึงการริเริ่มโครงการด้านพลังงานสะอาดและนวัตกรรมระดับโลก</li>
+      </ul>
+
+      <h2>2. แก่นแนวคิดและปรัชญาการทำงาน</h2>
+      <ul>
+        <li><strong>พลังของแพลตฟอร์มและมาตรฐานร่วม:</strong> เกตส์มองเห็นคุณค่าของการสร้างชั้นซอฟต์แวร์ที่เชื่อมผู้ผลิตฮาร์ดแวร์และนักพัฒนาซอฟต์แวร์จำนวนมากเข้าด้วยกัน ทำให้เกิดเครือข่ายและมาตรฐานที่ขยายขนาดได้รวดเร็ว</li>
+        <li><strong>การวิเคราะห์เชิงข้อมูลและการมองไปข้างหน้า:</strong> เขามีชื่อเสียงด้านการอ่านเอกสารและรายงานจำนวนมาก วิเคราะห์โครงสร้างความเสี่ยงและโอกาสล่วงหน้า และท้าทายสมมติฐานของทีมงานอย่างตรงไปตรงมา</li>
+        <li><strong>การคิดเชิงระบบกับปัญหาที่ซับซ้อน:</strong> ในการทำงานด้านสาธารณสุข การพัฒนา และพลังงาน เกตส์มักมองปัญหาผ่านตัวชี้วัดผลลัพธ์ เทคโนโลยีที่ขยายสเกลได้ และความเชื่อมโยงของห่วงโซ่อุปทานในระดับโลก</li>
+      </ul>
+
+      <h2>3. ผลงานสำคัญที่สร้างผลกระทบระยะยาว</h2>
+      <div style="overflow-x: auto; margin: 20px 0;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem;">
+          <thead>
+            <tr style="border-bottom: 1px solid #334155; text-align: left; color: #d4af37;">
+              <th style="padding: 10px 12px;">ช่วงเวลา / จุดเปลี่ยน</th>
+              <th style="padding: 10px 12px;">ผลงาน / บทบาทสำคัญ</th>
+              <th style="padding: 10px 12px;">ผลกระทบเชิงระบบและอุตสาหกรรม</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>ค.ศ. 1975</strong></td>
+              <td style="padding: 10px 12px;"><strong>ก่อตั้ง Microsoft &amp; Altair BASIC</strong></td>
+              <td style="padding: 10px 12px;">วางรากฐานธุรกิจซอฟต์แวร์สำหรับไมโครคอมพิวเตอร์ยุคเริ่มต้น</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>ค.ศ. 1980s–1990s</strong></td>
+              <td style="padding: 10px 12px;"><strong>MS-DOS, Windows และชุดแอปพลิเคชันสำนักงาน</strong></td>
+              <td style="padding: 10px 12px;">สร้างมาตรฐานระบบปฏิบัติการและซอฟต์แวร์สำนักงาน (เช่น Word, Excel, PowerPoint) ที่ใช้งานแพร่หลายทั่วโลก [00:00:26]</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>ค.ศ. 2000 เป็นต้นไป</strong></td>
+              <td style="padding: 10px 12px;"><strong>Gates Foundation &amp; งานด้านสาธารณสุข/พลังงาน</strong></td>
+              <td style="padding: 10px 12px;">สนับสนุนการควบคุมโรค การเข้าถึงวัคซีน การศึกษา และการวิจัยเทคโนโลยีพลังงานสะอาดในระดับนานาชาติ</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 12px;"><strong>หนังสือและงานเขียน</strong></td>
+              <td style="padding: 10px 12px;"><strong>The Road Ahead, Business @ the Speed of Thought</strong></td>
+              <td style="padding: 10px 12px;">ถ่ายทอดมุมมองเรื่องอินเทอร์เน็ต การใช้ข้อมูลดิจิทัลในองค์กร และการปรับตัวของระบบเศรษฐกิจ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  }, {
     id: "steve-jobs-architect-of-technology-and-liberal-arts",
     title: "สตีฟ จอบส์ (Steve Jobs): สถาปนิกแห่งจุดตัดระหว่างเทคโนโลยีและศิลปศาสตร์",
     category: "People",
