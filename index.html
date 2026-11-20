@@ -202,5 +202,24 @@
     const activeNav = document.querySelector(`.nav-links a[data-category="${initialCat}"]`);
     filterCategory(initialCat, activeNav);
   </script>
+  <style>
+  body h2.featured-title,
+  body h2.featured-title a,
+  body .featured-title,
+  body .featured-title a {
+    font-size: clamp(1rem, 1.45vw, 1.25rem) !important;
+    line-height: 1.35 !important;
+  }
+
+  @media (max-width: 768px) {
+    body h2.featured-title,
+    body h2.featured-title a,
+    body .featured-title,
+    body .featured-title a {
+      font-size: 1rem !important;
+      line-height: 1.35 !important;
+    }
+  }
+</style>
 </body>
 </html>
