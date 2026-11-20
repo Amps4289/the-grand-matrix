@@ -1,4 +1,82 @@
-const BLOG_POSTS = [ {
+const BLOG_POSTS = [  {
+    id: "steve-jobs-architect-of-technology-and-liberal-arts",
+    title: "สตีฟ จอบส์ (Steve Jobs): สถาปนิกแห่งจุดตัดระหว่างเทคโนโลยีและศิลปศาสตร์",
+    category: "People",
+    date: "NOV 20, 2026",
+    featured: true,
+    image: "Steve Jobs.jpg",
+    excerpt: "ถอดรหัสเส้นทางชีวิต แนวคิด และผลงานของสตีฟ จอบส์ ผู้เปลี่ยนเทคโนโลยีให้ผสานกับศิลปศาสตร์และประสบการณ์ผู้ใช้ ตั้งแต่ Apple, NeXT และ Pixar สู่ยุคสมาร์ตโฟน",
+    youtubeId: "5J-47F8Hrdw",
+    keywords: ["Steve Jobs", "Apple", "NeXT", "Pixar", "Systems Thinking", "Simplicity", "iPhone"],
+    content: `
+      <p>หากมองผ่านเลนส์ของการคิดเชิงระบบ (<strong>Systems Thinking</strong>) <strong>สตีฟ จอบส์ (Steve Jobs)</strong> ไม่ได้เป็นเพียงผู้ร่วมก่อตั้งบริษัทเทคโนโลยี แต่คือ "ผู้สถาปนาระบบนิเวศ (Ecosystem Architect)" ที่เปลี่ยนมุมมองของมนุษย์ที่มีต่อคอมพิวเตอร์และอุปกรณ์ดิจิทัล จากเครื่องมือคำนวณที่ซับซ้อนและเย็นชา ให้กลายเป็นส่วนขยายของความคิดสร้างสรรค์และวิถีชีวิต</p>
+
+      <h2>1. ประวัติและเส้นทางชีวิต (ค.ศ. 1955–2011)</h2>
+      <ul>
+        <li><strong>วัยเยาว์และรากฐานความสนใจ (ค.ศ. 1955–1975):</strong> สตีเวน พอล จอบส์ เกิดเมื่อวันที่ 24 กุมภาพันธ์ ค.ศ. 1955 ที่เมืองซานฟรานซิสโก รัฐแคลิฟอร์เนีย และเติบโตในย่านซิลิคอนแวลลีย์โดยมี <strong>พอล และ คลารา จอบส์</strong> เป็นบิดามารดาบุญธรรม พอล จอบส์ เป็นช่างเครื่องที่ปลูกฝังความพิถีพิถันในการประกอบชิ้นส่วนแม้ในจุดที่มองไม่เห็น ในปี ค.ศ. 1972 จอบส์เข้าศึกษาที่ <strong>Reed College</strong> ก่อนจะลาออกแต่ยังคงเข้าเรียนวิชาเลือกด้าน <strong>การออกแบบตัวอักษร (Calligraphy)</strong> ซึ่งกลายเป็นรากฐานของความงามด้านไทโปกราฟีบนเครื่อง Mac ในเวลาต่อมา</li>
+        <li><strong>การก่อตั้ง Apple และจุดเปลี่ยนครั้งใหญ่ (ค.ศ. 1976–1985):</strong> วันที่ 1 เมษายน ค.ศ. 1976 จอบส์ร่วมกับ <strong>สตีฟ วอซเนียก (Steve Wozniak)</strong> และ <strong>โรนัลด์ เวย์น (Ronald Wayne)</strong> ก่อตั้ง <strong>Apple Computer</strong> ในโรงรถของครอบครัว ความสำเร็จของ <strong>Apple II</strong> ทำให้บริษัทเติบโตอย่างก้าวกระโดด ทว่าความขัดแย้งเชิงกลยุทธ์กับคณะกรรมการบริหารและ <strong>จอห์น สกัลลีย์ (John Sculley)</strong> ส่งผลให้จอบส์ถูกปลดจากอำนาจบริหารและลาออกจาก Apple ในปี ค.ศ. 1985</li>
+        <li><strong>NeXT, Pixar และการหวนคืนบัลลังก์ (ค.ศ. 1985–1997):</strong> ช่วงเวลา 12 ปีนอก Apple คือห้องทดลองสำคัญ จอบส์ก่อตั้ง <strong>NeXT</strong> เพื่อพัฒนาคอมพิวเตอร์เวิร์กสเตชันระดับสูงและระบบปฏิบัติการเชิงวัตถุ พร้อมเข้าซื้อแผนกคอมพิวเตอร์กราฟิกของ Lucasfilm และปั้นให้กลายเป็น <strong>Pixar Animation Studios</strong> ผู้สร้างภาพยนตร์แอนิเมชันคอมพิวเตอร์เรื่องแรกของโลกอย่าง <em>Toy Story</em> (ค.ศ. 1995) ต่อมาในปลายปี ค.ศ. 1996 Apple เข้าซื้อกิจการ NeXT เพื่อนำระบบปฏิบัติการมาเป็นแกนกลางของ OS X ส่งผลให้จอบส์กลับมารับตำแหน่ง CEO และพลิกฟื้น Apple จากภาวะใกล้ล้มละลายสู่บริษัทที่มีมูลค่าสูงที่สุดแห่งหนึ่งของโลก จนกระทั่งเขาเสียชีวิตด้วยโรคมะเร็งตับอ่อนเมื่อวันที่ 5 ตุลาคม ค.ศ. 2011</li>
+      </ul>
+
+      <h2>2. แก่นแนวคิดและปรัชญาการทำงาน</h2>
+      <ul>
+        <li><strong>จุดตัดระหว่างเทคโนโลยีและศิลปศาสตร์ (Intersection of Technology &amp; Liberal Arts):</strong> จอบส์เชื่อว่าเทคโนโลยีเพียงอย่างเดียวไม่เพียงพอ แต่ต้องผสานเข้ากับศิลปะ มนุษยศาสตร์ และความเข้าใจในธรรมชาติของมนุษย์ เพื่อให้ผลิตภัณฑ์สื่อสารกับผู้ใช้งานได้อย่างเป็นธรรมชาติ</li>
+        <li><strong>ความเรียบง่ายคือความซับซ้อนขั้นสูงสุด (Simplicity is the Ultimate Sophistication):</strong> การตัดสิ่งที่ไม่จำเป็นออกไปไม่ได้เกิดจากการมองข้ามรายละเอียด แต่เกิดจากการเข้าใจแก่นแท้ของปัญหาอย่างลึกซึ้ง จนเหลือเพียงสิ่งที่เรียบง่ายและทรงพลังที่สุด</li>
+        <li><strong>การควบคุมระบบนิเวศแบบเบ็ดเสร็จ (End-to-End Integration):</strong> จอบส์ยึดหลักการออกแบบทั้ง <strong>ฮาร์ดแวร์ ซอฟต์แวร์ และบริการ</strong> ให้ทำงานสอดประสานกันเป็นหนึ่งเดียว เพื่อสร้างประสบการณ์ผู้ใช้ (User Experience) ที่ไร้รอยต่อ แทนที่จะแยกส่วนผลิตเหมือนอุตสาหกรรมทั่วไป</li>
+        <li><strong>Reality Distortion Field และมาตรฐานความสมบูรณ์แบบ:</strong> เขามีความสามารถในการผลักดันทีมงานให้ก้าวข้ามขีดจำกัดเดิมๆ โดยไม่ยอมประนีประนอมกับงานที่อยู่ในระดับ "แค่พอใช้ได้"</li>
+      </ul>
+
+      <h2>3. ผลงานสำคัญที่เปลี่ยนโครงสร้างอุตสาหกรรมโลก</h2>
+      <div style="overflow-x: auto; margin: 20px 0;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem;">
+          <thead>
+            <tr style="border-bottom: 1px solid #334155; text-align: left; color: #d4af37;">
+              <th style="padding: 10px 12px;">ปี (ค.ศ.)</th>
+              <th style="padding: 10px 12px;">ผลงาน / ผลิตภัณฑ์</th>
+              <th style="padding: 10px 12px;">ผลกระทบเชิงระบบและอุตสาหกรรม</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>1976–1977</strong></td>
+              <td style="padding: 10px 12px;"><strong>Apple I &amp; Apple II</strong></td>
+              <td style="padding: 10px 12px;">เปลี่ยนคอมพิวเตอร์จากเครื่องจักรขนาดใหญ่ในห้องแล็บให้กลายเป็นคอมพิวเตอร์ส่วนบุคคล (PC) สำหรับคนทั่วไป</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>1984</strong></td>
+              <td style="padding: 10px 12px;"><strong>Macintosh</strong></td>
+              <td style="padding: 10px 12px;">นำส่วนติดต่อผู้ใช้แบบกราฟิก (GUI) เมาส์ และฟอนต์ที่สวยงามมาสู่ตลาดมวลชน</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>1995</strong></td>
+              <td style="padding: 10px 12px;"><strong>Toy Story (Pixar)</strong></td>
+              <td style="padding: 10px 12px;">เปิดศักราชใหม่ของอุตสาหกรรมภาพยนตร์แอนิเมชัน 3 มิติด้วยคอมพิวเตอร์</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>1998</strong></td>
+              <td style="padding: 10px 12px;"><strong>iMac</strong></td>
+              <td style="padding: 10px 12px;">ปฏิวัติการออกแบบคอมพิวเตอร์ตั้งโต๊ะด้วยดีไซน์โปร่งแสงสีสันสดใส และกอบกู้สถานะทางการเงินของ Apple</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>2001</strong></td>
+              <td style="padding: 10px 12px;"><strong>iPod &amp; iTunes</strong></td>
+              <td style="padding: 10px 12px;">พลิกโฉมอุตสาหกรรมดนตรีสู่ยุคดิจิทัลด้วยแนวคิด "1,000 เพลงในกระเป๋าของคุณ" และโมเดลร้านค้าเพลงออนไลน์</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>2007</strong></td>
+              <td style="padding: 10px 12px;"><strong>iPhone</strong></td>
+              <td style="padding: 10px 12px;">ผสานโทรศัพท์ เครื่องเล่นเพลง และอินเทอร์เน็ตเข้าด้วยกัน พร้อมระบบสัมผัส Multi-Touch และ App Store ที่สร้างเศรษฐกิจยุคสมาร์ตโฟน</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 12px;"><strong>2010</strong></td>
+              <td style="padding: 10px 12px;"><strong>iPad</strong></td>
+              <td style="padding: 10px 12px;">สร้างหมวดหมู่คอมพิวเตอร์แท็บเล็ตยุคใหม่ที่เชื่อมช่องว่างระหว่างสมาร์ตโฟนกับโน้ตบุ๊ก</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },{
     id: "from-telegraph-to-submarine-cables-information-and-economic-power",
     title: "จากสายโทรเลขสู่สายเคเบิลใต้น้ำ: ประวัติศาสตร์การควบคุมข้อมูลและอำนาจทางเศรษฐกิจโลก",
     category: "Technology",
