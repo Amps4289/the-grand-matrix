@@ -509,4 +509,44 @@ header h1, .site-title, .logo {
     line-height: 1.35 !important;
   }
 }
+  /* ปรับขนาดหัวข้อหลัก (H1) ของบทความให้เล็กลงอีกนิดและสมดุลบนมือถือ */
+.post-header h1,
+.article-header h1,
+article h1,
+h1.post-title,
+h1.article-title {
+  font-size: clamp(1.2rem, 2.8vw, 1.85rem) !important;
+  line-height: 1.32 !important;
+  margin-top: 0.4rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* ปรับขนาดข้อความเกริ่นนำ (Excerpt / Lead) ใต้หัวข้อให้อยู่ในสัดส่วนที่พอดี */
+.post-header p,
+.article-header p,
+.post-excerpt,
+.article-excerpt {
+  font-size: clamp(0.88rem, 1.5vw, 1.02rem) !important;
+  line-height: 1.55 !important;
+}
+
+/* ปรับลดเพิ่มเติมเฉพาะหน้าจอมือถือ */
+@media (max-width: 768px) {
+  .post-header h1,
+  .article-header h1,
+  article h1,
+  h1.post-title,
+  h1.article-title {
+    font-size: 1.15rem !important;
+    line-height: 1.32 !important;
+  }
+
+  .post-header p,
+  .article-header p,
+  .post-excerpt,
+  .article-excerpt {
+    font-size: 0.86rem !important;
+    line-height: 1.5 !important;
+  }
+}
 }
