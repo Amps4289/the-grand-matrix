@@ -596,3 +596,21 @@ main > section:first-child h1 {
 }
   
 }
+/* ปรับขนาดหัวข้อ Featured ให้เล็กลงและสมดุลทั้งบนคอมและมือถือ */
+h2.featured-title,
+h2.featured-title a,
+.featured-title,
+.featured-title a {
+  font-size: clamp(1rem, 1.45vw, 1.25rem) !important;
+  line-height: 1.35 !important;
+}
+
+@media (max-width: 768px) {
+  h2.featured-title,
+  h2.featured-title a,
+  .featured-title,
+  .featured-title a {
+    font-size: 1rem !important;
+    line-height: 1.35 !important;
+  }
+}
