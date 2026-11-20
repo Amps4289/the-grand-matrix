@@ -74,7 +74,7 @@ const BLOG_POSTS = [ {
     category: "Philosophy",
     date: "NOV 19, 2026",
     featured: true,
-    image: "systems-thinking-cover.jpg",
+    image: "systems-thinking-cover-diagram.jpg",
     excerpt: "ตลอดระยะเวลากว่า 30 ปีในสายงานโครงสร้างพื้นฐานโทรคมนาคมและเทคโนโลยีดิจิทัล สิ่งที่สร้างความเสียหายซ้ำแล้วซ้ำเล่าไม่ใช่ความล้มเหลวของอุปกรณ์ แต่คือการแก้ปัญหาแบบแยกส่วน (Linear Thinking) ในโลกที่ทุกอย่างเชื่อมโยงเป็นระบบ",
     youtubeId: "CeOZzMmIekw",
     keywords: ["Systems Thinking", "Linear Thinking", "Feedback Loops", "Shifting the Burden", "Unintended Consequences", "Time Delays"],
