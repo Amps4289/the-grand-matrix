@@ -4,7 +4,7 @@ const BLOG_POSTS = [  {
     category: "People",
     date: "NOV 20, 2026",
     featured: true,
-    image: "Steve Jobs.jpg",
+    image: "steve-jobs.jpg",
     excerpt: "ถอดรหัสเส้นทางชีวิต แนวคิด และผลงานของสตีฟ จอบส์ ผู้เปลี่ยนเทคโนโลยีให้ผสานกับศิลปศาสตร์และประสบการณ์ผู้ใช้ ตั้งแต่ Apple, NeXT และ Pixar สู่ยุคสมาร์ตโฟน",
     youtubeId: "5J-47F8Hrdw",
     keywords: ["Steve Jobs", "Apple", "NeXT", "Pixar", "Systems Thinking", "Simplicity", "iPhone"],
