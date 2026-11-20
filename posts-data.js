@@ -162,21 +162,111 @@ const BLOG_POSTS = [ {
     `
   },
   {
-    id: "grand-matrix-system-architecture",
-    title: "ถอดรหัส The Grand Matrix: โลกที่เราเห็น เป็นเพียงผลลัพธ์ของระบบที่ถูกออกแบบ",
+    id: "history-of-semiconductors-from-crystals-to-ai-infrastructure",
+    title: "ประวัติของ Semiconductor จากอดีตถึงปัจจุบัน: จากผลึกแร่สู่โครงสร้างพื้นฐานแห่งยุคปัญญาประดิษฐ์",
     category: "Technology",
-    date: "NOV 19, 2026",
-    featured: true,
+    date: "NOV 20, 2026",
+    featured: false,
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80",
-    excerpt: "เมื่อโครงสร้างพื้นฐานดิจิทัล เครือข่ายการเงิน และสถาปัตยกรรมข้อมูลถูกเชื่อมเข้าหากัน ภายใต้แนวคิด Systems Thinking อะไรคือจุดเปราะบางที่คนส่วนใหญ่มองข้าม",
-    youtubeId: "",
-    keywords: ["The Grand Matrix", "Systems Thinking", "Digital Infrastructure", "Centralization", "World Order"],
+    excerpt: "สำรวจวิวัฒนาการของสารกึ่งตัวนำตั้งแต่การค้นพบสมบัติทางฟิสิกส์ในศตวรรษที่ 19 ทรานซิสเตอร์ วงจรรวม ไมโครโปรเซสเซอร์ สู่ยุคชิป AI ระดับนาโนเมตรและภูมิรัฐศาสตร์ห่วงโซ่อุปทานโลก",
+    youtubeId: "dX9CGRZwD-w",
+    keywords: ["Semiconductor", "Transistor", "Integrated Circuit", "MOSFET", "Microprocessor", "AI Chips", "Supply Chain", "Systems Thinking"],
     content: `
-      <p>ท่ามกลางกระแสความเปลี่ยนแปลงที่ถาโถมเข้ามาทุกวัน ทั้งความก้าวหน้าของปัญญาประดิษฐ์ (Artificial Intelligence) วิกฤตโครงสร้างพื้นฐานด้านข้อมูล และการเปลี่ยนผ่านของระบบการเงินโลก ผู้คนส่วนใหญ่มักมองเหตุการณ์เหล่านี้แยกส่วนกันราวกับเป็นเรื่องบังเอิญ</p>
-      <p>แต่หากมองผ่านเลนส์ของ <strong>การคิดเชิงระบบ (Systems Thinking)</strong> เราจะพบว่าทุกปรากฏการณ์ล้วนเป็นผลลัพธ์ (Output) จากสถาปัตยกรรมและกติกาพื้นฐานที่ถูกวางโครงสร้างไว้ล่วงหน้า</p>
-      <h2>ความเปราะบางของการรวมศูนย์ (Centralization Risk)</h2>
-      <p>จากเหตุการณ์ระบบสื่อสาร การบิน และบริการคลาวด์ระดับโลกหยุดชะงักในช่วงที่ผ่านมา สะท้อนให้เห็นความจริงข้อหนึ่งว่า ยิ่งโลกเชื่อมต่อกันด้วยโครงสร้างพื้นฐานแบบรวมศูนย์ (Centralized Infrastructure) มากเท่าไร ประสิทธิภาพในยามปกติก็ยิ่งสูงขึ้น แต่ในขณะเดียวกัน <strong>ความเสี่ยงเชิงระบบ (Systemic Risk)</strong> เมื่อเกิดความผิดพลาดเพียงจุดเดียวก็สามารถส่งแรงกระเพื่อมไปทั่วโลกได้ในเวลาไม่กี่นาที</p>
-      <blockquote>"การเข้าใจระบบไม่ได้มีไว้เพื่อให้เราหวาดกลัว แต่มีไว้เพื่อให้เราเห็นทางเลือกและวางตำแหน่งของตัวเองได้อย่างมีสติท่ามกลางความผันผวน"</blockquote>
+      <p>หากมองผ่านเลนส์ของการคิดเชิงระบบ (<strong>Systems Thinking</strong>) <strong>สารกึ่งตัวนำ (Semiconductor)</strong> ไม่ได้เป็นเพียงชิ้นส่วนอิเล็กทรอนิกส์ขนาดจิ๋ว แต่คือ "โครงสร้างพื้นฐานทางปัญญาและโปรโตคอล (Protocol) ของโลกยุคใหม่" ที่เปลี่ยนจากการควบคุมกระแสไฟฟ้าเบื้องต้น มาสู่การประมวลผลข้อมูลมหาศาล การเชื่อมต่อเครือข่ายระดับโลก และสมองกลของปัญญาประดิษฐ์ (AI)</p>
+
+      <h2>1. ยุคบุกเบิกและรากฐานทางฟิสิกส์ (ค.ศ. 1833–1930s)</h2>
+      <p>จุดเริ่มต้นของสารกึ่งตัวนำเกิดจากการสังเกตปรากฏการณ์ทางฟิสิกส์ที่แปลกไปจากโลหะทั่วไป:</p>
+      <ul>
+        <li><strong>ค.ศ. 1833:</strong> <strong>Michael Faraday</strong> บันทึกการค้นพบปรากฏการณ์สารกึ่งตัวนำเป็นครั้งแรก เมื่อพบว่าค่าการนำไฟฟ้าของผลึกซิลเวอร์ซัลไฟด์ (Ag<sub>2</sub>S) เพิ่มขึ้นตามอุณหภูมิ ซึ่งตรงข้ามกับทองแดงและโลหะทั่วไป</li>
+        <li><strong>ค.ศ. 1874:</strong> <strong>Karl Ferdinand Braun</strong> นักฟิสิกส์ชาวเยอรมัน ค้นพบคุณสมบัติการเรียงกระแส (Rectification) แบบจุดสัมผัส (Point-Contact) ระหว่างปลายโลหะกับผลึกแร่กาลีน่า (Galena) ซึ่งเป็นจุดกำเนิดของไดโอดสารกึ่งตัวนำยุคแรก</li>
+        <li><strong>ค.ศ. 1901:</strong> <strong>Jagadish Chandra Bose</strong> นักฟิสิกส์ชาวอินเดีย จดสิทธิบัตรเครื่องตรวจจับคลื่นวิทยุแบบ "Cat's Whisker" ที่ใช้ผลึกสารกึ่งตัวนำทำหน้าที่เรียงกระแส</li>
+        <li><strong>ค.ศ. 1926:</strong> <strong>Julius Edgar Lilienfeld</strong> ยื่นจดสิทธิบัตรแนวคิดทรานซิสเตอร์แบบสนามไฟฟ้า (Field-Effect Transistor) สามขั้วโดยใช้คอปเปอร์ซัลไฟด์</li>
+        <li><strong>ค.ศ. 1931:</strong> <strong>Alan Wilson</strong> ตีพิมพ์ทฤษฎีกลศาสตร์ควอนตัมเพื่ออธิบายสมบัติของสารกึ่งตัวนำ ขณะที่ <strong>Boris Davydov</strong>, <strong>Nevill Mott</strong> และ <strong>Walter Schottky</strong> ร่วมวางรากฐานทฤษฎีการเรียงกระแสในช่วงปลายทศวรรษ 1930s</li>
+      </ul>
+
+      <h2>2. การถือกำเนิดของทรานซิสเตอร์และการเปลี่ยนผ่านจากหลอดสุญญากาศ (ค.ศ. 1940s–1950s)</h2>
+      <p>ในยุคแรก คอมพิวเตอร์อย่าง ENIAC ที่สร้างขึ้นในปี <strong>ค.ศ. 1946</strong> ณ <strong>University of Pennsylvania</strong> ใช้หลอดสุญญากาศ (Vacuum Tubes) ถึงราว 18,000 หลอด กินพื้นที่ทั้งห้อง กินไฟมหาศาล และระบายความร้อนยาก สารกึ่งตัวนำจึงเข้ามาพลิกโฉมระบบ:</p>
+      <ul>
+        <li><strong>ค.ศ. 1940:</strong> <strong>Russell Ohl</strong> ค้นพบรอยต่อ <strong>p-n junction</strong> และปรากฏการณ์โฟโตโวลตาอิกในซิลิกอน</li>
+        <li><strong>ธันวาคม ค.ศ. 1947:</strong> <strong>John Bardeen</strong> และ <strong>Walter Brattain</strong> แห่ง <strong>Bell Laboratories (สหรัฐอเมริกา)</strong> ประดิษฐ์ <strong>Point-Contact Transistor</strong> จากเจอร์เมเนียมได้สำเร็จ และในปี <strong>ค.ศ. 1948</strong> <strong>William Shockley</strong> วางแนวคิด <strong>Junction Transistor</strong> ที่เสถียรกว่า ทั้งสามได้รับรางวัลโนเบลสาขาฟิสิกส์ร่วมกันในปี <strong>ค.ศ. 1956</strong></li>
+        <li><strong>ค.ศ. 1951:</strong> <strong>Gordon Teal</strong> และ <strong>Morgan Sparks</strong> พัฒนาทรานซิสเตอร์รอยต่อแบบเติบโตจากผลึกเดี่ยว (Grown-Junction Transistor) ขณะที่ <strong>William Pfann</strong> และ <strong>Henry Theurer</strong> พัฒนาเทคนิค <em>Zone Refining</em> เพื่อผลิตวัสดุบริสุทธิ์สูง</li>
+        <li><strong>ค.ศ. 1954:</strong> <strong>Morris Tanenbaum</strong> สร้างทรานซิสเตอร์ซิลิกอนตัวแรกที่ <strong>Bell Labs</strong> ซึ่งทนความร้อนและมีกระแสรั่วต่ำกว่าเจอร์เมเนียม และวิศวกรของ <strong>Texas Instruments</strong> (ก่อตั้งในปี 1951 โดย <strong>Cecil H. Green</strong>, <strong>J. Erik Jonsson</strong>, <strong>Eugene McDermott</strong> และ <strong>Patrick E. Haggerty</strong>) นำออกวางจำหน่ายเชิงพาณิชย์</li>
+        <li><strong>ค.ศ. 1955:</strong> <strong>Carl Frosch</strong> และ <strong>Lincoln Derick</strong> ค้นพบเทคนิค <em>Oxide Masking</em> บนแผ่นซิลิกอนเวเฟอร์ ควบคู่กับการพัฒนา <em>Photolithography</em> โดย <strong>Jules Andrus</strong> และ <strong>Walter Bond</strong></li>
+      </ul>
+
+      <h2>3. ยุควงจรรวม (IC) และไมโครโปรเซสเซอร์ (ค.ศ. 1958–1980s)</h2>
+      <p>เมื่อวงจรซับซ้อนขึ้น การบัดกรีชิ้นส่วนแยกทีละชิ้นกลายเป็นคอขวด จึงเกิดการรวมทุกอย่างลงบนแผ่นชิปเดียว:</p>
+      <ul>
+        <li><strong>ค.ศ. 1958–1959:</strong> <strong>Jack Kilby</strong> แห่ง <strong>Texas Instruments</strong> ประดิษฐ์วงจรรวม (Integrated Circuit - IC) ตัวแรก และในปีเดียวกัน <strong>Robert Noyce</strong> แห่ง <strong>Fairchild Semiconductor</strong> พัฒนากระบวนการแบบ <em>Planar</em> ที่เชื่อมวงจรบนผิวซิลิกอนได้อย่างเหมาะกับการผลิตจำนวนมาก ขณะที่ <strong>Jean Hoerni</strong> ต่อยอดกระบวนการ Planar และ <strong>Mohamed Atalla</strong> กับ <strong>Dawon Kahng</strong> สร้าง <strong>MOSFET</strong> สำเร็จในปี <strong>ค.ศ. 1959</strong> ซึ่งเป็นรากฐานสำคัญที่สุดของชิปยุคดิจิทัล</li>
+        <li><strong>ค.ศ. 1965:</strong> <strong>Gordon Moore</strong> เสนอแนวคิด <strong>Moore's Law</strong> สะท้อนการเพิ่มความหนาแน่นของทรานซิสเตอร์บนชิปอย่างต่อเนื่อง</li>
+        <li><strong>ค.ศ. 1971:</strong> <strong>Intel</strong> เปิดตัว <strong>Intel 4004</strong> ไมโครโปรเซสเซอร์ตัวแรกของโลก ที่รวมหน่วยประมวลผลกลางลงบนชิปเดียว</li>
+        <li><strong>ค.ศ. 1970s–1980s:</strong> เทคโนโลยีพัฒนาจาก SSI/MSI สู่ <strong>LSI</strong>, <strong>VLSI</strong> และ <strong>ULSI</strong> ในปี <strong>ค.ศ. 1980</strong> <strong>Fujio Masuoka</strong> แห่ง <strong>Toshiba</strong> คิดค้น <strong>Flash Memory</strong> หน่วยความจำแบบไม่ลบเลือน (Non-volatile) และบริษัทญี่ปุ่นอย่าง <strong>NEC</strong>, <strong>Toshiba</strong>, <strong>Hitachi</strong> และ <strong>Fujitsu</strong> ก้าวขึ้นเป็นผู้นำตลาดหน่วยความจำ DRAM และอุปกรณ์อิเล็กทรอนิกส์ผู้บริโภค ขณะเดียวกัน <strong>ASML</strong> ก่อตั้งขึ้นในประเทศเนเธอร์แลนด์ (ค.ศ. 1984) เพื่อพัฒนาเครื่องจักร Lithography สำหรับการผลิตชิป</li>
+      </ul>
+
+      <h2>4. ยุค PC, อินเทอร์เน็ต, สมาร์ตโฟน และการแยกส่วนห่วงโซ่อุปทาน (ค.ศ. 1990s–2010s)</h2>
+      <ul>
+        <li><strong>ค.ศ. 1990s–2000s:</strong> การขยายตัวของคอมพิวเตอร์ส่วนบุคคล (PC) อินเทอร์เน็ต และโทรศัพท์มือถือ ผลักดันสถาปัตยกรรม CPU ความเร็วสูงและหน่วยความจำความจุสูงเข้าสู่ครัวเรือนทั่วโลก</li>
+        <li><strong>ค.ศ. 2007:</strong> การเปิดตัว <strong>iPhone</strong> เร่งให้การออกแบบแบบ <strong>System-on-Chip (SoC)</strong> กลายเป็นกระแสหลัก โดยรวม CPU, GPU, หน่วยความจำ และการสื่อสารไว้ในชิปเดียว</li>
+        <li><strong>การแบ่งขั้วผู้เล่นในระบบนิเวศ:</strong> รูปแบบ <em>Pure-Play Foundry</em> (รับจ้างผลิตชิปให้บริษัทผู้ออกแบบแบบ Fabless) เติบโตอย่างแข็งแกร่ง โดยมี <strong>TSMC</strong> (ไต้หวัน) และ <strong>Samsung</strong> เป็นผู้ผลิตรายใหญ่ระดับแนวหน้า ขณะที่ <strong>ARM</strong> กลายเป็นหัวใจของสถาปัตยกรรมชิปในสมาร์ตโฟน และ <strong>NVIDIA</strong> ก้าวขึ้นเป็นผู้นำด้าน GPU สำหรับการประมวลผลกราฟิกและ AI</li>
+      </ul>
+
+      <h2>5. ยุคปัจจุบัน: AI, โครงสร้างระดับนาโนเมตร และภูมิรัฐศาสตร์ชิป (ค.ศ. 2020s–2026)</h2>
+      <p>ในทศวรรษ 2020s อุตสาหกรรมเซมิคอนดักเตอร์ก้าวเข้าสู่สมรภูมิที่ซับซ้อนทั้งทางวิศวกรรมและโครงสร้างอำนาจโลก:</p>
+      <ul>
+        <li><strong>สถาปัตยกรรมและวัสดุใหม่:</strong> กระบวนการผลิตก้าวสู่ระดับ <strong>2nm</strong> พร้อมเทคโนโลยี <strong>GAAFET</strong> (Gate-All-Around FET), <strong>3D Stacking</strong> และ <strong>Chiplet</strong> รวมถึงการใช้วัสดุสารกึ่งตัวนำแบบกว้าง (Wide-Bandgap) อย่าง <strong>SiC</strong> และ <strong>GaN</strong> สำหรับระบบพลังงานและโครงสร้างพื้นฐานยุคใหม่</li>
+        <li><strong>แรงส่งจาก AI และ Data Center:</strong> ความต้องการชิปประมวลผล AI (GPUs / AI Accelerators) และหน่วยความจำแบนด์วิดท์สูงสำหรับ Data Center ทำให้มูลค่าตลาดเซมิคอนดักเตอร์โลกขยายตัวสูง (จากระดับ 627 พันล้านดอลลาร์ในปี 2024 มุ่งสู่ระดับล้านล้านดอลลาร์ภายในทศวรรษนี้ตามคาดการณ์ของสถาบันวิจัยอุตสาหกรรม)</li>
+        <li><strong>พลวัตองค์กรและภูมิรัฐศาสตร์ (2024–2026):</strong> โครงสร้างอำนาจในห่วงโซ่คุณค่าเปลี่ยนโฉมอย่างชัดเจน—ตั้งแต่การปรับโครงสร้างครั้งใหญ่ของ <strong>Intel</strong> (รวมถึงการแต่งตั้ง <strong>Lip-Bu Tan</strong> เป็น CEO ในเดือนมีนาคม 2025 และการเข้ามาถือหุ้น/ลงทุนเชิงยุทธศาสตร์จากภาครัฐสหรัฐฯ และพันธมิตรอุตสาหกรรม), การขยายกำลังการผลิตเครื่องจักร <strong>EUV / High-NA EUV</strong> ของ <strong>ASML</strong> ร่วมกับ <strong>TSMC</strong>, <strong>Samsung</strong> และ <strong>Intel</strong>, ไปจนถึงมาตรการควบคุมการส่งออกและนโยบายอุดหนุนการผลิตในประเทศของสหรัฐฯ สหภาพยุโรป ญี่ปุ่น และเอเชีย ที่ทำให้เซมิคอนดักเตอร์กลายเป็นเสาหลักด้านความมั่นคงแห่งชาติอย่างเต็มตัว</li>
+      </ul>
+
+      <h2>สรุปตารางลำดับเหตุการณ์สำคัญ</h2>
+      <div style="overflow-x: auto; margin: 20px 0;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem;">
+          <thead>
+            <tr style="border-bottom: 1px solid #334155; text-align: left; color: #d4af37;">
+              <th style="padding: 10px 12px;">ช่วงเวลา</th>
+              <th style="padding: 10px 12px;">เหตุการณ์สำคัญ</th>
+              <th style="padding: 10px 12px;">บุคคล / องค์กรที่เกี่ยวข้อง</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>1833–1901</strong></td>
+              <td style="padding: 10px 12px;">ค้นพบสมบัติสารกึ่งตัวนำ, Point-Contact Rectifier และ Cat's Whisker Detector</td>
+              <td style="padding: 10px 12px;">Michael Faraday, Karl Ferdinand Braun, Jagadish Chandra Bose</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>1947–1956</strong></td>
+              <td style="padding: 10px 12px;">ประดิษฐ์ทรานซิสเตอร์และรับรางวัลโนเบลฟิสิกส์ (1956)</td>
+              <td style="padding: 10px 12px;">Bardeen, Brattain, Shockley (Bell Labs)</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>1958–1959</strong></td>
+              <td style="padding: 10px 12px;">คิดค้นวงจรรวม (IC), กระบวนการ Planar และ MOSFET</td>
+              <td style="padding: 10px 12px;">Jack Kilby (TI), Robert Noyce (Fairchild), Atalla &amp; Kahng</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>1971</strong></td>
+              <td style="padding: 10px 12px;">เปิดตัวไมโครโปรเซสเซอร์ตัวแรกของโลก (Intel 4004)</td>
+              <td style="padding: 10px 12px;">Intel</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>1980s</strong></td>
+              <td style="padding: 10px 12px;">พัฒนา Flash Memory, VLSI และเครื่องจักร Lithography</td>
+              <td style="padding: 10px 12px;">Fujio Masuoka (Toshiba), NEC, ASML</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>2000s–2010s</strong></td>
+              <td style="padding: 10px 12px;">ขยายตัวของ SoC, สมาร์ตโฟน และโมเดลโรงหล่อผลิตชิป (Foundry)</td>
+              <td style="padding: 10px 12px;">TSMC, Samsung, ARM, Apple, NVIDIA</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 12px;"><strong>2020s–2026</strong></td>
+              <td style="padding: 10px 12px;">ยุคชิป AI, 2nm / High-NA EUV และความมั่นคงทางห่วงโซ่อุปทานโลก</td>
+              <td style="padding: 10px 12px;">NVIDIA, TSMC, ASML, Intel, Samsung</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     `
   },
  
