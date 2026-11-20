@@ -120,7 +120,7 @@ const BLOG_POSTS = [ {
     category: "Philosophy",
     date: "NOV 18, 2026",
     featured: true,
-    image: "grand-matrix-cover.png",
+    image: "crisis-mechanism.jpg",
     excerpt: "ถอดรหัสโครงสร้างและกลไกการขับเคลื่อนระบบโลก ผ่านบันทึกประวัติศาสตร์และยุทธศาสตร์การจัดระเบียบสังคม การใช้วิกฤตเศรษฐกิจเป็นเครื่องมือ และการควบคุมข้อมูลข่าวสาร",
     youtubeId: "",
     keywords: ["The Grand Matrix", "Power Structure", "Economic Crisis", "Media Control", "Systems Thinking", "Geopolitics"],
