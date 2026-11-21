@@ -449,9 +449,9 @@ img {
 .single-hero-img.full-book-img {
   width: auto !important;
   max-width: 420px !important;
-  max-height: 230px !important;
+  max-height: 150px !important;
   height: auto !important;
   aspect-ratio: auto !important;
   object-fit: contain !important;
-  margin: 10 auto 28px auto !important;
+  margin:5 auto 28px auto !important;
 }
