@@ -109,7 +109,7 @@
 
   <script src="posts-data.js"></script>
   <script>
-    const NEWSLETTER_ENDPOINT = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL';
+    const NEWSLETTER_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzgKeoYEr-ulLBiu_MP9q1Op5cLeKj1E6pW_bfuVJKJL_wH2cZfvXSj3pktMwo-4MnZlw/exec';
 
     const newsletterForm = document.getElementById('newsletterForm');
     if (newsletterForm) {
@@ -122,7 +122,7 @@
 
         if (!email) return;
 
-        if (!NEWSLETTER_ENDPOINT || NEWSLETTER_ENDPOINT.includes('https://script.google.com/macros/s/AKfycbxMLH52uY4W67O7I6OCKkaMGr47bJL82qhLE6gTBQjD/dev')) {
+        if (!NEWSLETTER_ENDPOINT || NEWSLETTER_ENDPOINT.includes('YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL')) {
           statusEl.textContent = 'ขอบคุณที่ติดตาม The Grand Matrix ครับ (รอตั้งค่า URL ของ Google Apps Script เพื่อบันทึกลงชีต)';
           emailInput.value = '';
           return;
