@@ -140,11 +140,12 @@ img {
   margin-bottom: 52px;
 }
 
+/* ขนาด Welcome บนคอมพิวเตอร์ (ปรับตัวเลขนี้ได้ทั้งเพิ่มและลด) */
 .hero-title {
   font-family: var(--font-serif);
-  font-size: 2.05rem;
+  font-size: 1.85rem;
   font-weight: 400;
-  line-height: 1.18;
+  line-height: 1.25;
   max-width: 780px;
   color: var(--text-primary);
   letter-spacing: -0.02em;
@@ -198,10 +199,12 @@ img {
   color: var(--text-secondary);
 }
 
-.featured-title {
+/* ขนาดหัวข้อ Featured บนคอมพิวเตอร์ (ปรับตัวเลขนี้ได้ทั้งเพิ่มและลด) */
+.featured-title,
+.featured-title a {
   font-family: var(--font-serif);
-  font-size: 2.35rem;
-  line-height: 1.2;
+  font-size: 1.45rem;
+  line-height: 1.3;
   margin-bottom: 14px;
   font-weight: 400;
   color: var(--text-primary);
@@ -267,8 +270,8 @@ img {
 
 .single-post-title {
   font-family: var(--font-serif);
-  font-size: 2.8rem;
-  line-height: 1.2;
+  font-size: 2.2rem;
+  line-height: 1.25;
   margin-bottom: 24px;
   color: var(--text-primary);
   font-weight: 400;
@@ -348,7 +351,7 @@ img {
   border-radius: 4px;
 }
 
-/* --- 5. NEWSLETTER BANNER (กล่องแนวนอนตามภาพตัวอย่าง) --- */
+/* --- 5. NEWSLETTER BANNER --- */
 .newsletter-box {
   background-color: var(--bg-newsletter);
   border: 1px solid #1e3a2f;
@@ -360,7 +363,7 @@ img {
 
 .newsletter-box h2 {
   font-family: var(--font-serif);
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 400;
   max-width: 520px;
   margin: 0 auto 28px auto;
@@ -397,8 +400,9 @@ img {
   font-size: 0.95rem;
   cursor: pointer;
   white-space: nowrap;
+}
 
-/* --- บังคับจัด Footer เป็น 4 ส่วนแนวนอน (โลโก้ซ้าย + 3 คอลัมน์: Pages, Categories, Contact) --- */
+/* --- 6. FOOTER --- */
 .site-footer {
   border-top: 1px solid #1e293b;
   padding: 56px 0 48px 0;
@@ -407,210 +411,36 @@ img {
 }
 
 .footer-grid {
-  display: grid !important;
-  grid-template-columns: 1.6fr 1fr 1fr 1.3fr !important;
-  gap: 40px !important;
-  margin-bottom: 48px !important;
-  align-items: start !important;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.3fr;
+  gap: 40px;
+  margin-bottom: 48px;
+  align-items: start;
 }
 
 .footer-col h4 {
-  color: #f8fafc !important;
-  font-size: 0.95rem !important;
-  margin-bottom: 16px !important;
-  font-weight: 600 !important;
+  color: #f8fafc;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  font-weight: 600;
 }
 
 .footer-col ul {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-col li {
-  margin-bottom: 10px !important;
-  font-size: 0.9rem !important;
-  list-style-type: none !important;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  list-style-type: none;
 }
 
 .footer-col a {
-  color: #94a3b8 !important;
-  text-decoration: none !important;
+  color: #94a3b8;
+  text-decoration: none;
 }
 
 .footer-col a:hover {
-  color: #d4af37 !important;
-}
-
-.footer-bottom {
-  border-top: 1px solid #1e293b;
-  padding-top: 24px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.85rem;
-  color: #94a3b8;
-}
-
-/* บนมือถือหรือจอแคบ ให้เรียงเป็น 2 คอลัมน์ หรือ 1 คอลัมน์อัตโนมัติ */
-@media (max-width: 768px) {
-  .footer-grid {
-    grid-template-columns: 1fr 1fr !important;
-    gap: 28px !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-grid {
-    grid-template-columns: 1fr !important;
-  }
-
-  /* ปรับขนาด Header / Title ให้ยืดหยุ่นตามขนาดหน้าจอ (Responsive) */
-header h1, .site-title, .logo {
-  font-size: clamp(1.35rem, 3.5vw, 2.2rem) !important;
-  line-height: 1.25 !important;
-}
-
-/* หัวข้อหลักของบทความในหน้าอ่านบทความ (post.html) */
-.post-header h1, article h1, .article-title {
-  font-size: clamp(1.45rem, 4vw, 2.3rem) !important;
-  line-height: 1.35 !important;
-}
-
-/* หัวข้อย่อยภายในเนื้อหาบทความ */
-.post-content h2, article h2 {
-  font-size: clamp(1.15rem, 3vw, 1.5rem) !important;
-  line-height: 1.4 !important;
-  margin-top: 1.6rem !important;
-}
-
-.post-content h3, article h3 {
-  font-size: clamp(1.05rem, 2.5vw, 1.25rem) !important;
-  line-height: 1.4 !important;
-}
-
-/* ปรับลดขนาดเพิ่มเติมเฉพาะบนหน้าจอมือถือ (กว้างไม่เกิน 768px) */
-@media (max-width: 768px) {
-  header h1, .site-title, .logo {
-    font-size: 1.3rem !important;
-  }
-
-  .post-header h1, article h1, .article-title {
-    font-size: 1.4rem !important;
-    line-height: 1.35 !important;
-  }
-
-  .post-content h2, article h2 {
-    font-size: 1.15rem !important;
-  }
-
-  /* หัวข้อการ์ดบทความในหน้าแรก (index.html) */
-  .post-card h2, .post-card h3, .card-title {
-    font-size: 1.1rem !important;
-    line-height: 1.35 !important;
-  }
-}
-  /* ปรับขนาดหัวข้อหลัก (H1) ของบทความให้เล็กลงอีกนิดและสมดุลบนมือถือ */
-.post-header h1,
-.article-header h1,
-article h1,
-h1.post-title,
-h1.article-title {
-  font-size: clamp(1.2rem, 2.8vw, 1.85rem) !important;
-  line-height: 1.32 !important;
-  margin-top: 0.4rem !important;
-  margin-bottom: 0.75rem !important;
-}
-
-/* ปรับขนาดข้อความเกริ่นนำ (Excerpt / Lead) ใต้หัวข้อให้อยู่ในสัดส่วนที่พอดี */
-.post-header p,
-.article-header p,
-.post-excerpt,
-.article-excerpt {
-  font-size: clamp(0.88rem, 1.5vw, 1.02rem) !important;
-  line-height: 1.55 !important;
-}
-
-/* ปรับลดเพิ่มเติมเฉพาะหน้าจอมือถือ */
-@media (max-width: 768px) {
-  .post-header h1,
-  .article-header h1,
-  article h1,
-  h1.post-title,
-  h1.article-title {
-    font-size: 1.15rem !important;
-    line-height: 1.32 !important;
-  }
-
-  .post-header p,
-  .article-header p,
-  .post-excerpt,
-  .article-excerpt {
-    font-size: 0.86rem !important;
-    line-height: 1.5 !important;
-  }
-}/* 1. ปรับขนาดข้อความ Welcome ด้านบนสุดให้เล็กลงและกระชับขึ้น */
-.hero h1,
-.hero-title,
-.welcome-title,
-section.hero h1,
-main > section:first-child h1 {
-  font-size: clamp(1.35rem, 2.6vw, 2.05rem) !important;
-  line-height: 1.3 !important;
-}
-
-/* 2. ปรับขนาดหัวข้อในคอลัมน์ Featured ให้เล็กลง เพื่อให้สมดุลกับด้านล่าง */
-.featured h2,
-.featured h3,
-.featured-post h2,
-.featured-post h3,
-.featured-card h2,
-.featured-card h3,
-[class*="featured"] h2,
-[class*="featured"] h3 {
-  font-size: clamp(1.1rem, 1.65vw, 1.15rem) !important;
-  line-height: 1.35 !important;
-}
-
-/* ปรับลดเพิ่มเติมเฉพาะหน้าจอมือถือ (กว้างไม่เกิน 768px) */
-@media (max-width: 768px) {
-  .hero h1,
-  .hero-title,
-  .welcome-title,
-  section.hero h1,
-  main > section:first-child h1 {
-    font-size: 1.25rem !important;
-    line-height: 1.32 !important;
-  }
-
-  .featured h2,
-  .featured h3,
-  .featured-post h2,
-  .featured-post h3,
-  .featured-card h2,
-  .featured-card h3,
-  [class*="featured"] h2,
-  [class*="featured"] h3 {
-    font-size: 1.05rem !important;
-    line-height: 1.35 !important;
-  }
-}
-  
-}
-/* ปรับขนาดหัวข้อ Featured ให้เล็กลงและสมดุลทั้งบนคอมและมือถือ */
-h2.featured-title,
-h2.featured-title a,
-.featured-title,
-.featured-title a {
-  font-size: clamp(1rem, 1.45vw, 1.25rem) !important;
-  line-height: 1.35 !important;
-}
-
-@media (max-width: 768px) {
-  h2.featured-title,
-  h2.featured-title a,
-  .featured-title,
-  .featured-title a {
-    font-size: 1rem !important;
-    line-height: 1.35 !important;
-  }
-}
+  color: #d4af37;
