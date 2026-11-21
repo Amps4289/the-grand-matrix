@@ -4,13 +4,13 @@ const BLOG_POSTS = [ {
     category: "Lifestyle",
     date: "NOV 21, 2026",
     featured: false,
-    
+    image: "changing-world-order.png",
     fullImage: true,
     excerpt: "ถอดรหัสวัฏจักรการขึ้นลงของมหาอำนาจ เงินสกุลสำรองหลักของโลก แรงขับเคลื่อนหลัก 3 ประการ บทสรุปแนวคิด และบทวิจารณ์เชิงระบบจากหนังสือ The Changing World Order ของ Ray Dalio",
     youtubeId: "E-6bv8_pj-E",
     keywords: ["Ray Dalio", "The Changing World Order", "Book Review", "Reserve Currency", "Debt Cycle", "Systems Thinking"],
     content: `
-    <p><img src="changing-world-order.png" alt="หนังสือ The Changing World Order โดย Ray Dalio" /></p>
+    
       <p>หากมองผ่านเลนส์ของการคิดเชิงระบบ (<strong>Systems Thinking</strong>) หนังสือ <em>Principles for Dealing with the Changing World Order: Why Nations Succeed and Fail</em> ของ <strong>Ray Dalio</strong> ชวนให้เรามองประวัติศาสตร์เศรษฐกิจและการเมืองระหว่างประเทศย้อนกลับไปหลายร้อยปี เพื่อค้นหารูปแบบความสัมพันธ์เชิงเหตุและผลที่เกิดซ้ำในวัฏจักรการขึ้นลงของมหาอำนาจและสกุลเงินสำรองหลักของโลก[cite: 12]</p>
 
       <h2>1. วัฏจักรของมหาอำนาจและระเบียบโลก (The Big Cycle)</h2>
