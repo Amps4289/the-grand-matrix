@@ -1,11 +1,11 @@
 const BLOG_POSTS = [{
     id: "peter-senge-systems-thinking-and-learning-organization",
-    title: "ปีเตอร์ เซนจ์ (Peter Senge): ผู้บุกเบิกการคิดเชิงระบบและองค์กรแห่งการเรียนรู้",
+    title: "ปีเตอร์ เซ็งเก้ (Peter Senge): ผู้บุกเบิกการคิดเชิงระบบและองค์กรแห่งการเรียนรู้",
     category: "People",
     date: "NOV 21, 2026",
     featured: false,
     image: "peter-senge.jpg",
-    excerpt: "สำรวจประวัติ แนวคิด และผลงานของปีเตอร์ เซนจ์ เจ้าของหนังสือ The Fifth Discipline ผู้เปลี่ยนมุมมองการบริหาร การศึกษา และการเปลี่ยนแปลงเชิงระบบของสังคมและโลก",
+    excerpt: "สำรวจประวัติ แนวคิด และผลงานของปีเตอร์ เซ็งเก้ เจ้าของหนังสือ The Fifth Discipline ผู้เปลี่ยนมุมมองการบริหาร การศึกษา และการเปลี่ยนแปลงเชิงระบบของสังคมและโลก",
     youtubeId: "MPRu33j4qgo",
     keywords: ["Peter Senge", "Systems Thinking", "The Fifth Discipline", "Learning Organization", "Mental Models", "Leadership"],
     content: `
