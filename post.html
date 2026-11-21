@@ -112,7 +112,7 @@
         <span class="meta-date">${post.date}</span>
       </div>
       <h1 class="single-post-title">${post.title}</h1>
-      <img src="${post.image}" alt="${post.title}" class="single-hero-img" />
+     <img src="${post.image}" alt="${post.title}" class="single-hero-img ${post.id === 'the-changing-world-order-ray-dalio-summary' ? 'full-book-img' : ''}" /> 
       <div class="single-post-body">
         ${post.content}
         ${videoHTML}
