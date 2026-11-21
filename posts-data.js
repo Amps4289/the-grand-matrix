@@ -1,4 +1,94 @@
 const BLOG_POSTS = [ {
+    id: "technology-changing-the-world-in-100-years",
+    title: "เทคโนโลยีเปลี่ยนโลกในรอบ 100 ปี: รายละเอียดนวัตกรรมและผู้บุกเบิกเบื้องหลังการเปลี่ยนแปลง",
+    category: "Technology",
+    date: "NOV 21, 2026",
+    featured: false,
+    image: "tech-100-year.jpg",
+    excerpt: "สำรวจเทคโนโลยีสำคัญตลอด 100 ปี พร้อมรายละเอียดนวัตกรรม บุคคลผู้คิดค้นหรือบุกเบิก และผลกระทบเชิงระบบตั้งแต่อุตสาหกรรมและการแพทย์ สู่สารกึ่งตัวนำ อินเทอร์เน็ต และปัญญาประดิษฐ์",
+    youtubeId: "HR7gd72yTYY",
+    keywords: ["Technology", "100 Years", "Inventors", "Semiconductor", "Internet", "AI", "Systems Thinking"],
+    content: `
+      <p>หากมองผ่านเลนส์ของการคิดเชิงระบบ (<strong>Systems Thinking</strong>) ประวัติศาสตร์เทคโนโลยีตลอดหนึ่งศตวรรษที่ผ่านมาไม่ได้เป็นเพียงรายการสิ่งประดิษฐ์ที่แยกส่วนกัน แต่คือวิวัฒนาการของ <strong>โปรโตคอล (Protocol) โครงสร้างพื้นฐาน และตัวขยายศักยภาพของมนุษย์</strong> โดยแต่ละจุดเปลี่ยนสำคัญล้วนเกิดจากการต่อยอดความรู้ทางวิทยาศาสตร์และวิศวกรรมของบุคคลและทีมผู้บุกเบิกในแต่ละยุคสมัย</p>
+
+      <h2>1. ยุคโครงสร้างพื้นฐานอุตสาหกรรม การแพทย์ และการสื่อสารมวลชน (1920s–1940s)</h2>
+      <p>ในระยะแรกของศตวรรษ เทคโนโลยีเปลี่ยนโลกด้วยการยกระดับสาธารณสุข การสื่อสารระยะไกล และการวางรากฐานการประมวลผลเชิงตรรกะ:</p>
+      <ul>
+        <li><strong>เพนิซิลลิน (Penicillin — ค.ศ. 1928):</strong> <strong>Alexander Fleming</strong> ค้นพบคุณสมบัติฆ่าเชื้อแบคทีเรียของเชื้อรา <em>Penicillium notatum</em> ที่ St Mary's Hospital กรุงลอนดอน ก่อนที่ <strong>Howard Florey</strong> และ <strong>Ernst Boris Chain</strong> พร้อมทีมวิจัยที่มหาวิทยาลัยออกซฟอร์ดจะพัฒนาเทคนิคการสกัดและผลิตเชิงพาณิชย์ในช่วงปลายทศวรรษ 1930s–1940s เปลี่ยนการรักษาโรคติดเชื้อและยกระดับอายุขัยประชากรโลกอย่างมหาศาล</li>
+        <li><strong>โทรทัศน์อิเล็กทรอนิกส์ (Electronic Television — ค.ศ. 1927):</strong> <strong>Philo Farnsworth</strong> ประสบความสำเร็จในการส่งภาพอิเล็กทรอนิกส์ผ่านหลอดรังสีแคโทด (Image Dissector) ขณะที่ <strong>Vladimir Zworykin</strong> แห่ง <strong>RCA</strong> พัฒนาระบบหลอดรับภาพ Iconoscope และ Kinescope ทำให้โทรทัศน์กลายเป็นสื่อมวลชนที่ทรงอิทธิพลต่อสังคมและวัฒนธรรมในครึ่งหลังของศตวรรษที่ 20</li>
+        <li><strong>เครื่องยนต์ไอพ่น (Turbojet Engine — ค.ศ. 1930s):</strong> <strong>Frank Whittle</strong> (สหราชอาณาจักร) และ <strong>Hans von Ohain</strong> (เยอรมนี) พัฒนาเครื่องยนต์กังหันก๊าซไอพ่นแยกกันในช่วงทศวรรษ 1930s วางรากฐานการบินความเร็วสูงและระยะไกลที่ย่นย่อเวลาเดินทางข้ามทวีป</li>
+        <li><strong>คอมพิวเตอร์อิเล็กทรอนิกส์ยุคแรกและการคำนวณเชิงตรรกะ (1930s–1940s):</strong> <strong>Alan Turing</strong> เสนอแนวคิด <em>Turing Machine</em> (ค.ศ. 1936) ซึ่งเป็นแบบจำลองพื้นฐานของคอมพิวเตอร์สมัยใหม่ ขณะที่ <strong>John von Neumann</strong> วางสถาปัตยกรรมคอมพิวเตอร์แบบเก็บโปรแกรมในหน่วยความจำ (<em>von Neumann architecture</em> — ค.ศ. 1945) และ <strong>John Mauchly</strong> กับ <strong>J. Presper Eckert</strong> ร่วมสร้าง <strong>ENIAC</strong> (ค.ศ. 1946) ที่ University of Pennsylvania</li>
+      </ul>
+
+      <h2>2. ยุคสารกึ่งตัวนำ คอมพิวเตอร์ และการสื่อสารดิจิทัล (1950s–1980s)</h2>
+      <p>จุดเปลี่ยนเชิงโครงสร้างครั้งใหญ่เกิดขึ้นเมื่อมนุษย์ย้ายจากการควบคุมเครื่องจักรขนาดใหญ่มาสู่การควบคุมอิเล็กตรอนในระดับจุลภาค:</p>
+      <ul>
+        <li><strong>ทรานซิสเตอร์และ MOSFET (1947–1959):</strong> <strong>John Bardeen</strong>, <strong>Walter Brattain</strong> และ <strong>William Shockley</strong> แห่ง <strong>Bell Labs</strong> ประดิษฐ์ทรานซิสเตอร์ในปี ค.ศ. 1947–1948 เพื่อแทนที่หลอดสุญญากาศขนาดใหญ่ ต่อมา <strong>Mohamed Atalla</strong> และ <strong>Dawon Kahng</strong> แห่ง Bell Labs คิดค้น <strong>MOSFET</strong> (Metal-Oxide-Semiconductor Field-Effect Transistor) สำเร็จในปี ค.ศ. 1959 ซึ่งเป็นหัวใจของชิปดิจิทัลนับล้านล้านตัวในปัจจุบัน</li>
+        <li><strong>วงจรรวม (Integrated Circuit - IC — ค.ศ. 1958–1959):</strong> <strong>Jack Kilby</strong> แห่ง <strong>Texas Instruments</strong> และ <strong>Robert Noyce</strong> แห่ง <strong>Fairchild Semiconductor</strong> พัฒนาวงจรรวมที่รวมทรานซิสเตอร์และส่วนประกอบอิเล็กทรอนิกส์ลงบนแผ่นสารกึ่งตัวนำชิ้นเดียว ลดขนาด ต้นทุน และเพิ่มความน่าเชื่อถือของระบบอิเล็กทรอนิกส์</li>
+        <li><strong>ไมโครโปรเซสเซอร์ตัวแรก (Intel 4004 — ค.ศ. 1971):</strong> <strong>Federico Faggin</strong>, <strong>Ted Hoff</strong> และ <strong>Stanley Mazor</strong> แห่ง <strong>Intel</strong> ร่วมพัฒนาไมโครโปรเซสเซอร์เชิงพาณิชย์ตัวแรกของโลกที่รวมหน่วยประมวลผลกลางไว้บนชิปเดียว เปิดทางให้คอมพิวเตอร์ก้าวเข้าสู่สำนักงานและบ้านเรือน</li>
+        <li><strong>ARPANET และโปรโตคอล TCP/IP (ปลายทศวรรษ 1960s–1983):</strong> โครงการ <strong>ARPANET</strong> ของกระทรวงกลาโหมสหรัฐฯ เชื่อมต่อคอมพิวเตอร์ระยะไกลสำเร็จในปี ค.ศ. 1969 ก่อนที่ <strong>Vint Cerf</strong> และ <strong>Bob Kahn</strong> จะออกแบบโปรโตคอล <strong>TCP/IP</strong> ซึ่งเป็นรากฐานการสื่อสารของอินเทอร์เน็ตในปัจจุบัน</li>
+        <li><strong>Flash Memory (ค.ศ. 1980s):</strong> <strong>Fujio Masuoka</strong> แห่ง <strong>Toshiba</strong> คิดค้นหน่วยความจำแบบแฟลช (NOR และ NAND Flash) ที่เก็บข้อมูลได้แม้ปิดไฟ ทำให้เกิดอุปกรณ์จัดเก็บข้อมูลแบบพกพาและ SSD ในยุคถัดมา</li>
+      </ul>
+
+      <h2>3. ยุคอินเทอร์เน็ต สมาร์ตโฟน และเศรษฐกิจเครือข่าย (1990s–2010s)</h2>
+      <p>เมื่อฮาร์ดแวร์มีพลังประมวลผลและขนาดพกพาได้ โลกจึงเปลี่ยนผ่านจากการประมวลผลแบบโดดเดี่ยวไปสู่ <strong>เครือข่ายที่เชื่อมต่อกันตลอดเวลา</strong>:</p>
+      <ul>
+        <li><strong>World Wide Web และเบราว์เซอร์ (ค.ศ. 1989–1993):</strong> <strong>Tim Berners-Lee</strong> เสนอแนวคิดและวางรากฐาน <strong>World Wide Web</strong> (HTTP, HTML, URL) ที่ CERN ขณะที่ <strong>Marc Andreessen</strong> และทีมงานร่วมพัฒนา <strong>Mosaic</strong> เว็บเบราว์เซอร์กราฟิกยุคแรกที่ช่วยให้ผู้คนทั่วไปเข้าถึงเว็บไซต์ได้ง่ายขึ้น</li>
+        <li><strong>เสิร์ชเอนจินและอัลกอริทึมการจัดอันดับเว็บ (ปลายทศวรรษ 1990s):</strong> <strong>Larry Page</strong> และ <strong>Sergey Brin</strong> พัฒนาอัลกอริทึม <strong>PageRank</strong> ซึ่งวัดความสำคัญของหน้าเว็บจากโครงสร้างการเชื่อมโยงลิงก์ เปลี่ยนวิธีค้นหาและจัดระเบียบข้อมูลของมนุษย์</li>
+        <li><strong>สมาร์ตโฟนหน้าจอสัมผัสและระบบนิเวศแอปพลิเคชัน (ค.ศ. 2007 เป็นต้นไป):</strong> <strong>Steve Jobs</strong> และทีมวิศวกรของ <strong>Apple</strong> เปิดตัว <strong>iPhone</strong> ในปี ค.ศ. 2007 ที่ผสานหน้าจอ Multi-Touch คอมพิวเตอร์พกพา และอินเทอร์เน็ตเข้าด้วยกัน พร้อมการเปิด <strong>App Store</strong> ในปี ค.ศ. 2008 ที่เปลี่ยนซอฟต์แวร์มือถือให้กลายเป็นเศรษฐกิจดิจิทัลขนาดใหญ่</li>
+        <li><strong>Cloud Computing และโครงสร้างพื้นฐานคลาวด์ยุคใหม่ (ช่วงทศวรรษ 2000s):</strong> การรวมศูนย์ทรัพยากรเซิร์ฟเวอร์ สตอเรจ และระบบเวอร์ชวลไลเซชัน เช่น การเปิดตัว <strong>Amazon Web Services (AWS)</strong> ในปี ค.ศ. 2006 ช่วยให้ธุรกิจและสตาร์ทอัพขยายระบบได้รวดเร็วโดยไม่ต้องสร้างศูนย์ข้อมูลเองตั้งแต่ต้น</li>
+      </ul>
+
+      <h2>4. ยุคปัญญาประดิษฐ์ พลังงานสะอาด และระบบอัจฉริยะ (2020s–ปัจจุบัน)</h2>
+      <p>ในทศวรรษล่าสุด เทคโนโลยีไม่ได้เป็นเพียงเครื่องมือที่มนุษย์สั่งการทีละขั้น แต่กำลังทำหน้าที่เป็น <strong>ชั้นการตัดสินใจและระบบอัตโนมัติ</strong> ที่ผสานกับโลกกายภาพ:</p>
+      <ul>
+        <li><strong>สถาปัตยกรรม Transformer และ Generative AI (ค.ศ. 2017–2020s):</strong> ทีมนักวิจัยของ <strong>Google</strong> เผยแพร่งานวิจัย <em>"Attention Is All You Need"</em> (ค.ศ. 2017 — ผู้เขียนร่วมได้แก่ <strong>Ashish Vaswani</strong>, <strong>Noam Shazeer</strong>, <strong>Niki Parmar</strong>, <strong>Jakob Uszkoreit</strong>, <strong>Llion Jones</strong>, <strong>Aidan N. Gomez</strong>, <strong>Łukasz Kaiser</strong> และ <strong>Illia Polosukhin</strong>) ที่แนะนำสถาปัตยกรรม <strong>Transformer</strong> ซึ่งเป็นรากฐานสำคัญของโมเดลภาษาขนาดใหญ่ (LLMs) และระบบ AI ยุคใหม่ที่สามารถสรุป วิเคราะห์ เขียนโค้ด และสร้างสรรค์เนื้อหาได้ในวงกว้าง</li>
+        <li><strong>GPU และระบบประมวลผลคู่ขนานสำหรับ AI:</strong> <strong>Jensen Huang</strong> และ <strong>NVIDIA</strong> พัฒนาสถาปัตยกรรม <strong>CUDA</strong> (เปิดตัวปี ค.ศ. 2006) และหน่วยประมวลผลกราฟิก (GPU) ที่เปลี่ยนจากการประมวลผลกราฟิกในเกม มาเป็นเครื่องยนต์หลักสำหรับการฝึกฝนและรันโมเดล AI ในศูนย์ข้อมูลทั่วโลก</li>
+        <li><strong>เทคโนโลยีแก้ไขจีโนม CRISPR-Cas9 (ค.ศ. 2012):</strong> <strong>Jennifer Doudna</strong> และ <strong>Emmanuelle Charpentier</strong> (พร้อมผลงานสำคัญด้านระบบ CRISPR ในเซลล์ยูคาริโอตของ <strong>Feng Zhang</strong> และทีมวิจัย) พัฒนากลไกตัดแต่งดีเอ็นเอ <strong>CRISPR-Cas9</strong> ที่แม่นยำและเข้าถึงได้ง่ายขึ้น เปิดมิติใหม่ด้านการแพทย์ การเกษตร และชีววิทยาสังเคราะห์</li>
+        <li><strong>พลังงานหมุนเวียน แบตเตอรี่ลิเธียมไอออน และระบบบริหารจัดการพลังงาน:</strong> การพัฒนาเซลล์แสงอาทิตย์ แบตเตอรี่ลิเธียมไอออน (ซึ่งวางรากฐานสำคัญโดย <strong>John B. Goodenough</strong>, <strong>M. Stanley Whittingham</strong> และ <strong>Akira Yoshino</strong> ผู้ได้รับรางวัลโนเบลเคมีปี ค.ศ. 2019) และอินเวอร์เตอร์อัจฉริยะ ช่วยให้การผลิตและกักเก็บพลังงานในระดับครัวเรือนและโครงข่ายไฟฟ้ามีความยืดหยุ่นและลดการพึ่งพาเชื้อเพลิงฟอสซิลมากขึ้น</li>
+      </ul>
+
+      <h2>ตารางสรุปเทคโนโลยีสำคัญและผู้คิดค้น / ผู้บุกเบิก</h2>
+      <div style="overflow-x: auto; margin: 20px 0;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem;">
+          <thead>
+            <tr style="border-bottom: 1px solid #334155; text-align: left; color: #d4af37;">
+              <th style="padding: 10px 12px;">ยุคสมัย</th>
+              <th style="padding: 10px 12px;">เทคโนโลยีสำคัญ</th>
+              <th style="padding: 10px 12px;">บุคคล / ทีมผู้คิดค้นหรือบุกเบิก</th>
+              <th style="padding: 10px 12px;">ผลกระทบเชิงระบบ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>1920s–1940s</strong></td>
+              <td style="padding: 10px 12px;">Penicillin, โทรทัศน์อิเล็กทรอนิกส์, เครื่องยนต์ไอพ่น, คอมพิวเตอร์ยุคแรก</td>
+              <td style="padding: 10px 12px;">Alexander Fleming, Florey &amp; Chain; Philo Farnsworth; Frank Whittle &amp; Hans von Ohain; Alan Turing, von Neumann</td>
+              <td style="padding: 10px 12px;">ยกระดับการรักษาโรค การสื่อสารภาพระยะไกล การบิน และการคำนวณเชิงตรรกะ</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>1950s–1980s</strong></td>
+              <td style="padding: 10px 12px;">ทรานซิสเตอร์, MOSFET, IC, ไมโครโปรเซสเซอร์, TCP/IP, Flash Memory</td>
+              <td style="padding: 10px 12px;">Bardeen, Brattain, Shockley; Atalla &amp; Kahng; Kilby &amp; Noyce; Faggin, Hoff &amp; Mazor; Cerf &amp; Kahn; Fujio Masuoka</td>
+              <td style="padding: 10px 12px;">ย่อขนาดการประมวลผล สร้างชิปดิจิทัล เชื่อมเครือข่ายคอมพิวเตอร์ และเก็บข้อมูลถาวร</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #1e293b;">
+              <td style="padding: 10px 12px;"><strong>1990s–2010s</strong></td>
+              <td style="padding: 10px 12px;">World Wide Web, PageRank, สมาร์ตโฟน/App Store, Cloud Computing</td>
+              <td style="padding: 10px 12px;">Tim Berners-Lee; Larry Page &amp; Sergey Brin; Steve Jobs &amp; ทีม Apple; ทีมพัฒนาคลาวด์/AWS</td>
+              <td style="padding: 10px 12px;">เชื่อมโยงข้อมูลทั่วโลก เปลี่ยนพฤติกรรมการเข้าถึงบริการ และลดต้นทุนโครงสร้างพื้นฐาน</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 12px;"><strong>2020s–ปัจจุบัน</strong></td>
+              <td style="padding: 10px 12px;">Transformer AI, GPU/CUDA, CRISPR-Cas9, แบตเตอรี่ลิเธียมไอออน</td>
+              <td style="padding: 10px 12px;">ทีมผู้เขียน Transformer (Vaswani et al.); Jensen Huang / NVIDIA; Doudna, Charpentier &amp; Zhang; Goodenough, Whittingham &amp; Yoshino</td>
+              <td style="padding: 10px 12px;">ขับเคลื่อนยุค AI การแพทย์แม่นยำ และการเปลี่ยนผ่านสู่พลังงานสะอาด</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  }, {
     id: "bill-gates-software-platform-and-global-systems",
     title: "บิล เกตส์ (Bill Gates): จากสถาปนิกซอฟต์แวร์ยุคคอมพิวเตอร์ส่วนบุคคลสู่ผู้ขับเคลื่อนระบบโลก",
     category: "People",
