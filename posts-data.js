@@ -4,7 +4,7 @@ const BLOG_POSTS = [ {
     category: "Lifestyle",
     date: "NOV 21, 2026",
     featured: false,
-    image: "changing-world-order.png",
+    
     fullImage: true,
     excerpt: "ถอดรหัสวัฏจักรการขึ้นลงของมหาอำนาจ เงินสกุลสำรองหลักของโลก แรงขับเคลื่อนหลัก 3 ประการ บทสรุปแนวคิด และบทวิจารณ์เชิงระบบจากหนังสือ The Changing World Order ของ Ray Dalio",
     youtubeId: "E-6bv8_pj-E",
