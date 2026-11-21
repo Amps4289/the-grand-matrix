@@ -1,10 +1,11 @@
 const BLOG_POSTS = [ {
     id: "the-changing-world-order-ray-dalio-summary",
     title: "สรุปเนื้อหาและรีวิวหนังสือ The Changing World Order โดย Ray Dalio: วัฏจักรอำนาจ หนี้สิน และระเบียบโลก",
-    category: "Philosophy",
+    category: "Lifestyle",
     date: "NOV 21, 2026",
     featured: false,
     image: "changing-world-order.png",
+    fullImage: true,
     excerpt: "ถอดรหัสวัฏจักรการขึ้นลงของมหาอำนาจ เงินสกุลสำรองหลักของโลก แรงขับเคลื่อนหลัก 3 ประการ บทสรุปแนวคิด และบทวิจารณ์เชิงระบบจากหนังสือ The Changing World Order ของ Ray Dalio",
     youtubeId: "E-6bv8_pj-E",
     keywords: ["Ray Dalio", "The Changing World Order", "Book Review", "Reserve Currency", "Debt Cycle", "Systems Thinking"],
