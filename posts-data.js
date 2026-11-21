@@ -4,7 +4,7 @@ const BLOG_POSTS = [ {
     category: "Technology",
     date: "NOV 21, 2026",
     featured: false,
-    image: "tech-100-year.jpg",
+    image: "tech-100-years.jpg",
     excerpt: "สำรวจเทคโนโลยีสำคัญตลอด 100 ปี พร้อมรายละเอียดนวัตกรรม บุคคลผู้คิดค้นหรือบุกเบิก และผลกระทบเชิงระบบตั้งแต่อุตสาหกรรมและการแพทย์ สู่สารกึ่งตัวนำ อินเทอร์เน็ต และปัญญาประดิษฐ์",
     youtubeId: "HR7gd72yTYY",
     keywords: ["Technology", "100 Years", "Inventors", "Semiconductor", "Internet", "AI", "Systems Thinking"],
