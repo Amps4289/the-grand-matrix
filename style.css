@@ -448,10 +448,10 @@ img {
 /* เฉพาะภาพหน้าเดี่ยวของบทความ Changing World Order ให้พอดีสายตา ไม่ใหญ่เกินไปและไม่ตัดขอบ */
 .single-hero-img.full-book-img {
   width: auto !important;
-  max-width: 100% !important;
-  max-height: 320px !important;
+  max-width: 420px !important;
+  max-height: 280px !important;
   height: auto !important;
   aspect-ratio: auto !important;
   object-fit: contain !important;
-  margin: 0 auto 32px auto !important;
+  margin: 0 auto 28px auto !important;
 }
