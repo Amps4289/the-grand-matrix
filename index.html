@@ -122,7 +122,7 @@
 
         if (!email) return;
 
-        if (!NEWSLETTER_ENDPOINT || NEWSLETTER_ENDPOINT.includes('YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL')) {
+        if (!NEWSLETTER_ENDPOINT || NEWSLETTER_ENDPOINT.includes('https://script.google.com/macros/s/AKfycbwkXPsaeSQv_0jI3O0PgjbCTxR3KSxN7ya_IuVYAmDYVA5pJWKSl4tsPVDUwTEJUlViFw/exec')) {
           statusEl.textContent = 'ขอบคุณที่ติดตาม The Grand Matrix ครับ (รอตั้งค่า URL ของ Google Apps Script เพื่อบันทึกลงชีต)';
           emailInput.value = '';
           return;
