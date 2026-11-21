@@ -54,15 +54,15 @@
     <!-- NEWSLETTER -->
     <section class="newsletter-box" id="newsletter">
       <h2>Get the best sent to your inbox, every month</h2>
-      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('ขอบคุณที่ติดตาม The Grand Matrix ครับ'); this.reset();">
-        <input type="email" placeholder="Enter your email" required />
-        <button type="submit">Subscribe</button>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" id="subscriberEmail" placeholder="Enter your email" required />
+        <button type="submit" id="newsletterBtn">Subscribe</button>
       </form>
-      <div class="newsletter-note">Once monthly, no spam</div>
+      <div class="newsletter-note" id="newsletterStatus">Once monthly, no spam</div>
     </section>
   </div>
 
-  <!-- FOOTER (3 คอลัมน์: 1. Pages, 2. Categories, 3. Contact) -->
+  <!-- FOOTER (โลโก้ซ้าย + 3 คอลัมน์: Pages, Categories, Contact) -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -109,6 +109,48 @@
 
   <script src="posts-data.js"></script>
   <script>
+    const NEWSLETTER_ENDPOINT = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL';
+
+    const newsletterForm = document.getElementById('newsletterForm');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        const emailInput = document.getElementById('subscriberEmail');
+        const submitBtn = document.getElementById('newsletterBtn');
+        const statusEl = document.getElementById('newsletterStatus');
+        const email = emailInput.value.trim();
+
+        if (!email) return;
+
+        if (!NEWSLETTER_ENDPOINT || NEWSLETTER_ENDPOINT.includes('YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL')) {
+          statusEl.textContent = 'ขอบคุณที่ติดตาม The Grand Matrix ครับ (รอตั้งค่า URL ของ Google Apps Script เพื่อบันทึกลงชีต)';
+          emailInput.value = '';
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Saving...';
+        statusEl.textContent = 'กำลังบันทึกข้อมูล...';
+
+        try {
+          await fetch(NEWSLETTER_ENDPOINT, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ email: email })
+          });
+
+          emailInput.value = '';
+          statusEl.textContent = 'ขอบคุณที่ติดตาม The Grand Matrix ครับ ระบบบันทึกอีเมลเรียบร้อยแล้ว';
+        } catch (error) {
+          statusEl.textContent = 'ไม่สามารถส่งข้อมูลได้ในขณะนี้ กรุณาลองใหม่อีกครั้งครับ';
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Subscribe';
+        }
+      });
+    }
+
     function renderPosts(category = 'ALL') {
       const featuredList = document.getElementById('featuredList');
       const recentGrid = document.getElementById('recentGrid');
