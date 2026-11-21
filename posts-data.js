@@ -1,10 +1,10 @@
 const BLOG_POSTS = [ {
     id: "the-fifth-discipline-summary-and-review",
     title: "สรุปเนื้อหาและรีวิวหนังสือ The Fifth Discipline โดย Peter M. Senge: กฎแห่งการเรียนรู้ในระบบที่ซับซ้อน",
-    category: "Philosophy",
+    category: "Lifestyle",
     date: "NOV 21, 2026",
     featured: false,
-    image: "the-fifth-discipline",
+    image: "the-fifth-discipline.jpg",
     excerpt: "ถอดรหัสแก่นแนวคิดของหนังสือ The Fifth Discipline ทั้ง 5 วินัยขององค์กรแห่งการเรียนรู้ กับดักการแก้ปัญหาเฉพาะหน้า และบทวิจารณ์เชิงระบบที่นำไปใช้ได้จริง",
     youtubeId: "MPRu33j4qgo",
     keywords: ["The Fifth Discipline", "Peter Senge", "Systems Thinking", "Learning Organization", "Mental Models", "Book Review"],
