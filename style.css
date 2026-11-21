@@ -444,3 +444,16 @@ img {
 
 .footer-col a:hover {
   color: #d4af37;
+
+  /* เฉพาะภาพที่อยู่ภายในเนื้อหาบทความ (.single-post-body) ให้เห็นเต็มภาพ ไม่ตัดขอบ */
+.single-post-body img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  display: block;
+  margin: 24px auto;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+}
