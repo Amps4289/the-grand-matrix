@@ -4,7 +4,7 @@ const BLOG_POSTS = [ {
     category: "Lifestyle",
     date: "NOV 22, 2026",
     featured: false,
-    image: "sapiens.jpg",
+    image: "sapiens.png",
     fullImage: true,
     excerpt: "ถอดรหัสวิวัฒนาการของ Homo sapiens ตั้งแต่อดีตอันไกลโพ้นสู่ยุคปัจจุบัน กลไกความร่วมมือขนาดใหญ่ เรื่องเล่าสมมติร่วมกัน เหตุผลที่มนุษย์อยู่รอด และบทวิจารณ์เชิงระบบจากหนังสือ Sapiens",
     youtubeId: "nzj7Wg4DAbs",
