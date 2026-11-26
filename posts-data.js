@@ -4,7 +4,7 @@ const BLOG_POSTS = [ {
     category: "Lifestyle",
     date: "NOV 26, 2026",
     featured: false,
-    image: "einstein3.jpg",
+    image: "einstein3.png",
     fullImage: true,
     excerpt: "เจาะลึกชีวิตวัยเด็ก ประวัติการศึกษา เหตุการณ์สำคัญ บุคคลรอบข้าง แก่นแนวคิด ปรัชญาการทำงาน และบทวิจารณ์เชิงระบบจากชีวประวัติของ Albert Einstein โดย Walter Isaacson",
     keywords: ["Albert Einstein", "Walter Isaacson", "Systems Thinking", "Relativity", "Thought Experiments", "Book Review"],
