@@ -1,7 +1,7 @@
 const BLOG_POSTS = [ {
   id: 'digital-economy-book-summary',
   title: 'สรุปหนังสือ The Digital Economy: ปัญญาเครือข่าย โอกาส และความเสี่ยงของเศรษฐกิจยุคใหม่',
-  category: 'Technology',
+  category: 'Lifestyle',
   date: 'Nov 26, 2026',
   featured: false,
   image: 'digital-economy.jpg',
