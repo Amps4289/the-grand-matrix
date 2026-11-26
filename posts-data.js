@@ -78,7 +78,7 @@ const BLOG_POSTS = [ {
 }, {
     id: "homo-deus-book-summary",
     title: "สรุปเนื้อหาและรีวิวหนังสือ Homo Deus โดย Yuval Noah Harari: จากมนุษย์สู่ความเป็นพระเจ้าและยุค Dataism",
-    category: "Philosophy",
+    category: "Lifestyle",
     date: "NOV 26, 2026",
     featured: false,
     image: "homo-deus.jpg",
