@@ -105,15 +105,14 @@
       .map(kw => `<span class="keyword-tag"># ${kw}</span>`)
       .join('');
 
-    const extraHeroClass = post.id === 'the-changing-world-order-ray-dalio-summary' ? ' full-book-img' : '';
-const fullBookPosts = [
+    const fullBookPosts = [
       'the-changing-world-order-ray-dalio-summary',
       'the-fifth-discipline-summary-and-review',
-      'sapiens-a-brief-history-of-humankind-summary'
+      'sapiens-a-brief-history-of-humankind-summary',
       'einstein-his-life-and-universe-summary'
     ];
-    const bookClass = fullBookPosts.includes(post.id) ? 'full-book-img' : '';
-    
+    const bookClass = fullBookPosts.includes(post.id) ? ' full-book-img' : '';
+
     document.getElementById('postContainer').innerHTML = `
       <a href="index.html" class="back-link">&larr; All articles</a>
       <div class="meta-bar">
@@ -121,7 +120,7 @@ const fullBookPosts = [
         <span class="meta-date">${post.date}</span>
       </div>
       <h1 class="single-post-title">${post.title}</h1>
-     <img src="${post.image}" alt="${post.title}" class="single-hero-img ${bookClass}" />
+      <img src="${post.image}" alt="${post.title}" class="single-hero-img${bookClass}" />
       <div class="single-post-body">
         ${post.content}
         ${videoHTML}
