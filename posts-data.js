@@ -4,7 +4,7 @@ const BLOG_POSTS = [ {
     category: "Philosophy",
     date: "NOV 26, 2026",
     featured: false,
-    image: "homo-deus-book.jpg",
+    image: "homo-deus.jpg",
     fullImage: true,
     excerpt: "สำรวจภาคต่อของ Sapiens ที่เปลี่ยนคำถามจากมนุษย์มาจากไหนสู่การกลายพันธุ์ในอนาคต เจาะลึกการเอาชนะ 3 ศัตรูเก่า วาระใหม่ของมนุษย์ ปัญญา vs จิตสำนึก ลัทธิ Dataism และบทวิจารณ์เชิงระบบ",
     keywords: ["Homo Deus", "Yuval Noah Harari", "Dataism", "Systems Thinking", "Bioengineering", "Artificial Intelligence", "Book Review"],
